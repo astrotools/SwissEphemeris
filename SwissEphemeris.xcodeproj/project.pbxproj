@@ -26,6 +26,7 @@
 		160935FB1A7C14C6002D2782 /* LICENSE.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 160935FA1A7C14C6002D2782 /* LICENSE.TXT */; };
 		160935FC1A7C152F002D2782 /* seasnam.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F261A7BF1A000D5068B /* seasnam.txt */; };
 		160935FE1A7C18FE002D2782 /* fixstars.cat in Resources */ = {isa = PBXBuildFile; fileRef = 160935FD1A7C18FE002D2782 /* fixstars.cat */; };
+		160936001A7C1B38002D2782 /* sedeltat.txt.inactive in Resources */ = {isa = PBXBuildFile; fileRef = 160935FF1A7C1B38002D2782 /* sedeltat.txt.inactive */; };
 		16B89F641A7BF1A000D5068B /* sepl_00.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC01A7BF1A000D5068B /* sepl_00.se1 */; };
 		16B89F651A7BF1A000D5068B /* sepl_06.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC11A7BF1A000D5068B /* sepl_06.se1 */; };
 		16B89F661A7BF1A000D5068B /* sepl_12.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC21A7BF1A000D5068B /* sepl_12.se1 */; };
@@ -232,6 +233,7 @@
 /* Begin PBXFileReference section */
 		160935FA1A7C14C6002D2782 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
 		160935FD1A7C18FE002D2782 /* fixstars.cat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fixstars.cat; sourceTree = "<group>"; };
+		160935FF1A7C1B38002D2782 /* sedeltat.txt.inactive */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sedeltat.txt.inactive; sourceTree = "<group>"; };
 		16B89EA41A7BF08000D5068B /* SwissEphemeris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwissEphemeris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B89EA81A7BF08000D5068B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16B89EC01A7BF1A000D5068B /* sepl_00.se1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sepl_00.se1; sourceTree = "<group>"; };
@@ -435,6 +437,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160936011A7C1B3D002D2782 /* Delta T */ = {
+			isa = PBXGroup;
+			children = (
+				160935FF1A7C1B38002D2782 /* sedeltat.txt.inactive */,
+			);
+			name = "Delta T";
+			sourceTree = "<group>";
+		};
 		16B89E9A1A7BF08000D5068B = {
 			isa = PBXGroup;
 			children = (
@@ -717,6 +727,7 @@
 				16B89F5C1A7BF1A000D5068B /* Asteroid data */,
 				16B89F5E1A7BF1A000D5068B /* Ficticious bodies */,
 				16B89F601A7BF1A000D5068B /* Fixed stars */,
+				160936011A7C1B3D002D2782 /* Delta T */,
 				16B89F621A7BF1A000D5068B /* Leap seconds */,
 			);
 			path = Data;
@@ -851,6 +862,7 @@
 				16B89FB21A7BF1A000D5068B /* semom06.se1 in Resources */,
 				16B89FC01A7BF1A000D5068B /* semom90.se1 in Resources */,
 				16B89FE51A7BF1A000D5068B /* seasm06.se1 in Resources */,
+				160936001A7C1B38002D2782 /* sedeltat.txt.inactive in Resources */,
 				16B89F641A7BF1A000D5068B /* sepl_00.se1 in Resources */,
 				16B89FFA1A7BF1A000D5068B /* seasm132.se1 in Resources */,
 				16B89FD71A7BF1A000D5068B /* seas_84.se1 in Resources */,
