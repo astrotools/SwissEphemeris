@@ -25,6 +25,7 @@
 /* Begin PBXBuildFile section */
 		160935FB1A7C14C6002D2782 /* LICENSE.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 160935FA1A7C14C6002D2782 /* LICENSE.TXT */; };
 		160935FC1A7C152F002D2782 /* seasnam.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F261A7BF1A000D5068B /* seasnam.txt */; };
+		160935FE1A7C18FE002D2782 /* fixstars.cat in Resources */ = {isa = PBXBuildFile; fileRef = 160935FD1A7C18FE002D2782 /* fixstars.cat */; };
 		16B89F641A7BF1A000D5068B /* sepl_00.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC01A7BF1A000D5068B /* sepl_00.se1 */; };
 		16B89F651A7BF1A000D5068B /* sepl_06.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC11A7BF1A000D5068B /* sepl_06.se1 */; };
 		16B89F661A7BF1A000D5068B /* sepl_12.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC21A7BF1A000D5068B /* sepl_12.se1 */; };
@@ -230,6 +231,7 @@
 
 /* Begin PBXFileReference section */
 		160935FA1A7C14C6002D2782 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
+		160935FD1A7C18FE002D2782 /* fixstars.cat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fixstars.cat; sourceTree = "<group>"; };
 		16B89EA41A7BF08000D5068B /* SwissEphemeris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwissEphemeris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B89EA81A7BF08000D5068B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16B89EC01A7BF1A000D5068B /* sepl_00.se1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sepl_00.se1; sourceTree = "<group>"; };
@@ -692,6 +694,7 @@
 		16B89F601A7BF1A000D5068B /* Fixed stars */ = {
 			isa = PBXGroup;
 			children = (
+				160935FD1A7C18FE002D2782 /* fixstars.cat */,
 				16B89F5F1A7BF1A000D5068B /* sefstars.txt */,
 			);
 			name = "Fixed stars";
@@ -977,6 +980,7 @@
 				16B89FC91A7BF1A000D5068B /* seas_00.se1 in Resources */,
 				16B89FDD1A7BF1A000D5068B /* seas_120.se1 in Resources */,
 				16B89F9F1A7BF1A000D5068B /* semo_54.se1 in Resources */,
+				160935FE1A7C18FE002D2782 /* fixstars.cat in Resources */,
 				16B89F911A7BF1A000D5068B /* seplm108.se1 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
