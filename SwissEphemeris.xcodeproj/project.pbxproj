@@ -23,6 +23,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		160935FB1A7C14C6002D2782 /* LICENSE.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 160935FA1A7C14C6002D2782 /* LICENSE.TXT */; };
+		160935FC1A7C152F002D2782 /* seasnam.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F261A7BF1A000D5068B /* seasnam.txt */; };
 		16B89F641A7BF1A000D5068B /* sepl_00.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC01A7BF1A000D5068B /* sepl_00.se1 */; };
 		16B89F651A7BF1A000D5068B /* sepl_06.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC11A7BF1A000D5068B /* sepl_06.se1 */; };
 		16B89F661A7BF1A000D5068B /* sepl_12.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC21A7BF1A000D5068B /* sepl_12.se1 */; };
@@ -123,7 +125,6 @@
 		16B89FC51A7BF1A000D5068B /* semom120.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F221A7BF1A000D5068B /* semom120.se1 */; };
 		16B89FC61A7BF1A000D5068B /* semom126.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F231A7BF1A000D5068B /* semom126.se1 */; };
 		16B89FC71A7BF1A000D5068B /* semom132.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F241A7BF1A000D5068B /* semom132.se1 */; };
-		16B89FC81A7BF1A000D5068B /* seasnam.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F261A7BF1A000D5068B /* seasnam.txt */; };
 		16B89FC91A7BF1A000D5068B /* seas_00.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F271A7BF1A000D5068B /* seas_00.se1 */; };
 		16B89FCA1A7BF1A000D5068B /* seas_06.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F281A7BF1A000D5068B /* seas_06.se1 */; };
 		16B89FCB1A7BF1A000D5068B /* seas_12.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F291A7BF1A000D5068B /* seas_12.se1 */; };
@@ -228,6 +229,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		160935FA1A7C14C6002D2782 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
 		16B89EA41A7BF08000D5068B /* SwissEphemeris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwissEphemeris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B89EA81A7BF08000D5068B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16B89EC01A7BF1A000D5068B /* sepl_00.se1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sepl_00.se1; sourceTree = "<group>"; };
@@ -706,6 +708,7 @@
 		16B89F631A7BF1A000D5068B /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				160935FA1A7C14C6002D2782 /* LICENSE.TXT */,
 				16B89EF21A7BF1A000D5068B /* Planet data */,
 				16B89F251A7BF1A000D5068B /* Moon data */,
 				16B89F5C1A7BF1A000D5068B /* Asteroid data */,
@@ -780,6 +783,7 @@
 		16B89E9B1A7BF08000D5068B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SWE;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Astrodienst AG";
 				TargetAttributes = {
@@ -871,6 +875,7 @@
 				16B89FBE1A7BF1A000D5068B /* semom78.se1 in Resources */,
 				16B89FC61A7BF1A000D5068B /* semom126.se1 in Resources */,
 				16B89FF41A7BF1A000D5068B /* seasm96.se1 in Resources */,
+				160935FC1A7C152F002D2782 /* seasnam.txt in Resources */,
 				16B89FA11A7BF1A000D5068B /* semo_66.se1 in Resources */,
 				16B89F6B1A7BF1A000D5068B /* sepl_42.se1 in Resources */,
 				16B89F791A7BF1A000D5068B /* sepl_126.se1 in Resources */,
@@ -890,6 +895,7 @@
 				16B89FCA1A7BF1A000D5068B /* seas_06.se1 in Resources */,
 				16B89F891A7BF1A000D5068B /* seplm60.se1 in Resources */,
 				16B89F951A7BF1A000D5068B /* seplm132.se1 in Resources */,
+				160935FB1A7C14C6002D2782 /* LICENSE.TXT in Resources */,
 				16B89FEB1A7BF1A000D5068B /* seasm42.se1 in Resources */,
 				16B89FF01A7BF1A000D5068B /* seasm72.se1 in Resources */,
 				16B89FDE1A7BF1A000D5068B /* seas_126.se1 in Resources */,
@@ -919,7 +925,6 @@
 				16B89FC31A7BF1A000D5068B /* semom108.se1 in Resources */,
 				16B89FBB1A7BF1A000D5068B /* semom60.se1 in Resources */,
 				16B89F741A7BF1A000D5068B /* sepl_96.se1 in Resources */,
-				16B89FC81A7BF1A000D5068B /* seasnam.txt in Resources */,
 				16B89FCC1A7BF1A000D5068B /* seas_18.se1 in Resources */,
 				16B89FAE1A7BF1A000D5068B /* semo_144.se1 in Resources */,
 				16B89F8E1A7BF1A000D5068B /* seplm90.se1 in Resources */,
