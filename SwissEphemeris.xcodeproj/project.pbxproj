@@ -451,7 +451,7 @@
 			children = (
 				16B8A0121A7BF26900D5068B /* SwissEphGlue.h */,
 				16B8A0131A7BF26900D5068B /* SwissEphGlue.m */,
-				16B89EA61A7BF08000D5068B /* SwissEphemeris */,
+				16B89EA61A7BF08000D5068B /* SwissEph */,
 				16B89F631A7BF1A000D5068B /* Data */,
 				16B89EA71A7BF08000D5068B /* Supporting Files */,
 				16B89EA51A7BF08000D5068B /* Products */,
@@ -467,7 +467,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		16B89EA61A7BF08000D5068B /* SwissEphemeris */ = {
+		16B89EA61A7BF08000D5068B /* SwissEph */ = {
 			isa = PBXGroup;
 			children = (
 				16B89FFF1A7BF26900D5068B /* swecl.c */,
@@ -492,7 +492,8 @@
 				16B8A0101A7BF26900D5068B /* swephlib.h */,
 				16B8A0111A7BF26900D5068B /* swetest.c */,
 			);
-			path = SwissEphemeris;
+			name = SwissEph;
+			path = swisseph;
 			sourceTree = "<group>";
 		};
 		16B89EA71A7BF08000D5068B /* Supporting Files */ = {
