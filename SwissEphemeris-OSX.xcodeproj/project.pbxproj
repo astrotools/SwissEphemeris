@@ -416,7 +416,7 @@
 		16B8A0361A7BF2E900D5068B /* swetest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swetest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B8A0431A7BF49000D5068B /* swepcalc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = swepcalc.c; sourceTree = "<group>"; };
 		16B8A0441A7BF49000D5068B /* swepcalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swepcalc.h; sourceTree = "<group>"; };
-		16F0A1F21A7E169200E88898 /* SwissEphemeris.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = SwissEphemeris.modulemap; sourceTree = SOURCE_ROOT; };
+		16F0A1F21A7E169200E88898 /* SwissEphemeris.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = SwissEphemeris.modulemap; path = SwissEphemeris/SwissEphemeris.modulemap; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -500,8 +500,8 @@
 			isa = PBXGroup;
 			children = (
 				16B89EA81A7BF08000D5068B /* Info.plist */,
-				16B8A0141A7BF26900D5068B /* UnexportedSymbols.exp */,
 				16F0A1F21A7E169200E88898 /* SwissEphemeris.modulemap */,
+				16B8A0141A7BF26900D5068B /* UnexportedSymbols.exp */,
 			);
 			name = "Supporting Files";
 			path = SwissEphemeris;

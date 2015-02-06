@@ -59,7 +59,6 @@
 		160935FA1A7C14C6002D2782 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
 		160935FD1A7C18FE002D2782 /* fixstars.cat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fixstars.cat; sourceTree = "<group>"; };
 		160935FF1A7C1B38002D2782 /* sedeltat.txt.inactive */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sedeltat.txt.inactive; sourceTree = "<group>"; };
-		16B89EA81A7BF08000D5068B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16B89EC01A7BF1A000D5068B /* sepl_00.se1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sepl_00.se1; sourceTree = "<group>"; };
 		16B89EC11A7BF1A000D5068B /* sepl_06.se1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sepl_06.se1; sourceTree = "<group>"; };
 		16B89EC21A7BF1A000D5068B /* sepl_12.se1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sepl_12.se1; sourceTree = "<group>"; };
@@ -235,11 +234,10 @@
 		16B8A0101A7BF26900D5068B /* swephlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swephlib.h; sourceTree = "<group>"; };
 		16B8A0121A7BF26900D5068B /* SwissEphGlue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwissEphGlue.h; path = SwissEphemeris/SwissEphGlue.h; sourceTree = "<group>"; };
 		16B8A0131A7BF26900D5068B /* SwissEphGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwissEphGlue.m; path = SwissEphemeris/SwissEphGlue.m; sourceTree = "<group>"; };
-		16B8A0141A7BF26900D5068B /* UnexportedSymbols.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = UnexportedSymbols.exp; sourceTree = "<group>"; };
 		16B8A0431A7BF49000D5068B /* swepcalc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = swepcalc.c; sourceTree = "<group>"; };
 		16B8A0441A7BF49000D5068B /* swepcalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swepcalc.h; sourceTree = "<group>"; };
 		16C04BFA1A853B8B00DCDC26 /* libSwissEphemeris.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwissEphemeris.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		16F0A1F21A7E169200E88898 /* SwissEphemeris.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = SwissEphemeris.modulemap; sourceTree = SOURCE_ROOT; };
+		16FE28931A85871400F48032 /* UnexportedSymbols.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = UnexportedSymbols.exp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -302,9 +300,7 @@
 		16B89EA71A7BF08000D5068B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				16B89EA81A7BF08000D5068B /* Info.plist */,
-				16B8A0141A7BF26900D5068B /* UnexportedSymbols.exp */,
-				16F0A1F21A7E169200E88898 /* SwissEphemeris.modulemap */,
+				16FE28931A85871400F48032 /* UnexportedSymbols.exp */,
 			);
 			name = "Supporting Files";
 			path = SwissEphemeris;
@@ -762,6 +758,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				UNEXPORTED_SYMBOLS_FILE = SwissEphemeris/UnexportedSymbols.exp;
 			};
 			name = Debug;
 		};
@@ -773,6 +770,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				UNEXPORTED_SYMBOLS_FILE = SwissEphemeris/UnexportedSymbols.exp;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
