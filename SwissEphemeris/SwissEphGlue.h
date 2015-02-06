@@ -41,11 +41,13 @@
 SEG_PRIVATE // swi_fopen(): strcpy(s1, ephepath); -> _SEGDataFilesCopyPathForFile(s1, fname, ephepath);
 void _SEGDataFilesCopyPathForFile(char *s1, const char *fileName, const char *ephepath);
 
+#if !(TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 // =========
 #pragma mark swetest support functions
 // =========
 SEG_PRIVATE_EXTERN // swetest`main(): strcpy(ephepath, ""); -> _SEGDataFilesCopyFrameworkPath(ephepath, "");
 void _SEGDataFilesCopyFrameworkPath(char *ephepath, __unused char *empty);
+#endif
 
 // =========
 #pragma mark Library lifecycle

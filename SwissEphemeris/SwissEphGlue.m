@@ -12,7 +12,11 @@
 #import "sweph.h"
 
 static NSBundle *_SWEDataFilesGetBundle() {
+#if !(TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
     return [NSBundle bundleWithIdentifier:@"com.astro.SwissEphemeris"];
+#else
+    return [NSBundle mainBundle];
+#endif
 }
 
 static NSURL *SWEDataFilesGetFrameworkURL() {
@@ -34,9 +38,11 @@ static NSURL *SWEDataFilesGetExternalURL() {
     return pathURL;
 }
 
+#if !(TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 void _SEGDataFilesCopyFrameworkPath(char *ephepath, __unused char *empty) {
     strcpy(ephepath, SWEDataFilesGetFrameworkURL().fileSystemRepresentation);
 }
+#endif
 
 void _SEGDataFilesCopyPathForFile(char *datapath, const char *fname, const char *ephepath) {
     NSFileManager *fm = [NSFileManager defaultManager];

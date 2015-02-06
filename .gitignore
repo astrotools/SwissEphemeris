@@ -4,7 +4,7 @@
 # Build directory
 build/
  
-# XCode user specific files
+# Xcode user specific files
 xcuserdata/
 *.xcworkspace/
 *.mode1v3
@@ -19,7 +19,3 @@ output
 # raw logs
 xcodebuild.log
 xcodebuild_error.log
-
-# Compiled product
-SwissEphemeris.framework
-SwissEphemeris.framework.dSYM
