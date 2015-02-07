@@ -45,6 +45,7 @@ void _SEGDataFilesCopyFrameworkPath(char *ephepath, __unused char *empty) {
 #endif
 
 void _SEGDataFilesCopyPathForFile(char *datapath, const char *fname, const char *ephepath) {
+#if !(TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
     NSFileManager *fm = [NSFileManager defaultManager];
     NSString *fileName = @(fname);
     
@@ -63,7 +64,8 @@ void _SEGDataFilesCopyPathForFile(char *datapath, const char *fname, const char 
         strcpy(datapath, ephepath);
         return;
     }
-    
+#endif
+
     // Configured ephemeris data path
     // User can change path via manual call to swe_set_ephe_path()
     strcpy(datapath, swed.ephepath);
