@@ -14,6 +14,7 @@
 				16C04C251A853F8700DCDC26 /* Build library for each architecture */,
 				16C04C2D1A85475500DCDC26 /* Build universal binary */,
 				16D205331A85507100AFA87A /* Copy headers to universal directory */,
+				16C21E961A877C4B004222CC /* Copy unexported symbols to universal directory */,
 				16D205351A85578F00AFA87A /* Remove product directories */,
 			);
 			dependencies = (
@@ -38,6 +39,7 @@
 		16C04C311A854A5300DCDC26 /* sweodef.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16B8A00B1A7BF26900D5068B /* sweodef.h */; };
 		16C04C321A854A5300DCDC26 /* swepcalc.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16B8A0441A7BF49000D5068B /* swepcalc.h */; };
 		16C04C331A854A5300DCDC26 /* swephexp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16B8A00E1A7BF26900D5068B /* swephexp.h */; };
+		16C21E971A877C63004222CC /* UnexportedSymbols.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16FE28931A85871400F48032 /* UnexportedSymbols.exp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +49,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				16C21E971A877C63004222CC /* UnexportedSymbols.exp in CopyFiles */,
 				16C04C311A854A5300DCDC26 /* sweodef.h in CopyFiles */,
 				16C04C321A854A5300DCDC26 /* swepcalc.h in CopyFiles */,
 				16C04C331A854A5300DCDC26 /* swephexp.h in CopyFiles */,
@@ -619,6 +622,20 @@
 			shellPath = /bin/sh;
 			shellScript = "LIBRARY_NAME=\"libSwissEphemeris.a\"\n\nSIMULATOR_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\"\nSIMULATOR_LIBRARY_64_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator-64\"\nDEVICE_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nSIMULATOR_LIBRARY_PATH=\"${SIMULATOR_LIBRARY_DIR}/${LIBRARY_NAME}\"\nSIMULATOR_LIBRARY_64_PATH=\"${SIMULATOR_LIBRARY_64_DIR}/${LIBRARY_NAME}\"\nDEVICE_LIBRARY_PATH=\"${DEVICE_LIBRARY_DIR}/${LIBRARY_NAME}\"\nUNIVERSAL_LIBRARY_PATH=\"${UNIVERSAL_LIBRARY_DIR}/${LIBRARY_NAME}\"\n\nmkdir -p \"${UNIVERSAL_LIBRARY_DIR}\"\nlipo \"${SIMULATOR_LIBRARY_PATH}\" \"${SIMULATOR_LIBRARY_64_PATH}\" \"${DEVICE_LIBRARY_PATH}\" -create -output \"${UNIVERSAL_LIBRARY_PATH}\"\n";
 		};
+		16C21E961A877C4B004222CC /* Copy unexported symbols to universal directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy unexported symbols to universal directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "DEVICE_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\ncp \"${DEVICE_LIBRARY_DIR}/UnexportedSymbols.exp\" \"${UNIVERSAL_LIBRARY_DIR}\"\n";
+		};
 		16D205331A85507100AFA87A /* Copy headers to universal directory */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -698,7 +715,6 @@
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
@@ -733,7 +749,6 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
