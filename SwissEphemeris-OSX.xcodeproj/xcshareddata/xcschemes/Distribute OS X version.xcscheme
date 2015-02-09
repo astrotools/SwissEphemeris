@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "cd &quot;${TARGET_BUILD_DIR}&quot;&#10;&#10;rm SwissEphemeris.framework.zip&#10;&#10;mkdir ArchiveTmp&#10;cd ArchiveTmp&#10;&#10;rsync ../SwissEphemeris.framework* . --exclude-from=&quot;${SRCROOT}/Data/.gitignore&quot; -a&#10;zip ../SwissEphemeris.framework.zip -r -q SwissEphemeris.framework*&#10;&#10;cd ..&#10;rm -r ArchiveTmp&#10;">
+               scriptText = "cd &quot;${TARGET_BUILD_DIR}&quot;&#10;&#10;rm SwissEphemeris.framework.zip&#10;&#10;mkdir ArchiveTmp&#10;cd ArchiveTmp&#10;&#10;rsync ../SwissEphemeris.framework . --exclude-from=&quot;${SRCROOT}/Data/.gitignore&quot; -a&#10;zip ../SwissEphemeris.framework.zip -r -q SwissEphemeris.framework&#10;&#10;cd ..&#10;rm -r ArchiveTmp&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
