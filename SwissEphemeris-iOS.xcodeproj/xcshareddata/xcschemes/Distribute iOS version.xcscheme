@@ -3,7 +3,7 @@
    LastUpgradeVersion = "0610"
    version = "1.7">
    <BuildAction
-      parallelizeBuildables = "YES"
+      parallelizeBuildables = "NO"
       buildImplicitDependencies = "YES">
       <PostActions>
          <ExecutionAction
@@ -17,6 +17,22 @@
                      BlueprintIdentifier = "16C04C1F1A853F6400DCDC26"
                      BuildableName = "Library"
                      BlueprintName = "Library"
+                     ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "cd &quot;${BUILD_DIR}/${CONFIGURATION}-iphonesimulator&quot;&#10;&#10;rm SwissEphemeris.framework.zip&#10;&#10;mkdir ArchiveTmp&#10;cd ArchiveTmp&#10;&#10;rsync ../SwissEphemeris.framework* . --exclude-from=&quot;${SRCROOT}/Data/.gitignore&quot; -a&#10;zip ../SwissEphemeris.framework.zip -r -q SwissEphemeris.framework*&#10;&#10;cd ..&#10;rm -r ArchiveTmp&#10;">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "161810321A878D4E00708976"
+                     BuildableName = "SwissEphemeris.framework"
+                     BlueprintName = "SwissEphemeris"
                      ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
@@ -38,6 +54,20 @@
                ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "161810321A878D4E00708976"
+               BuildableName = "SwissEphemeris.framework"
+               BlueprintName = "SwissEphemeris"
+               ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -47,6 +77,15 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "16C04C1F1A853F6400DCDC26"
+            BuildableName = "Library"
+            BlueprintName = "Library"
+            ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"

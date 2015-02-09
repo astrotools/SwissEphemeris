@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16C04BF91A853B8B00DCDC26"
-               BuildableName = "libSwissEphemeris.a"
-               BlueprintName = "libSwissEphemeris"
-               ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16C04C031A853B8B00DCDC26"
-               BuildableName = "SwissEphemerisTests.xctest"
-               BlueprintName = "SwissEphemerisTests"
+               BlueprintIdentifier = "161810321A878D4E00708976"
+               BuildableName = "SwissEphemeris.framework"
+               BlueprintName = "SwissEphemeris"
                ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,26 +28,7 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16C04C031A853B8B00DCDC26"
-               BuildableName = "SwissEphemerisTests.xctest"
-               BlueprintName = "SwissEphemerisTests"
-               ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16C04BF91A853B8B00DCDC26"
-            BuildableName = "libSwissEphemeris.a"
-            BlueprintName = "libSwissEphemeris"
-            ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -75,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16C04BF91A853B8B00DCDC26"
-            BuildableName = "libSwissEphemeris.a"
-            BlueprintName = "libSwissEphemeris"
+            BlueprintIdentifier = "161810321A878D4E00708976"
+            BuildableName = "SwissEphemeris.framework"
+            BlueprintName = "SwissEphemeris"
             ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -93,9 +60,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16C04BF91A853B8B00DCDC26"
-            BuildableName = "libSwissEphemeris.a"
-            BlueprintName = "libSwissEphemeris"
+            BlueprintIdentifier = "161810321A878D4E00708976"
+            BuildableName = "SwissEphemeris.framework"
+            BlueprintName = "SwissEphemeris"
             ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
