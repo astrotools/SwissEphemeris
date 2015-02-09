@@ -12,10 +12,10 @@
 #import "sweph.h"
 
 static NSBundle *_SWEDataFilesGetBundle() {
-#if !(TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
-    return [NSBundle bundleWithIdentifier:@"com.astro.SwissEphemeris"];
-#else
+#if STATIC_LIBRARY
     return [NSBundle mainBundle];
+#else
+    return [NSBundle bundleWithIdentifier:@"com.astro.SwissEphemeris"];
 #endif
 }
 
@@ -23,6 +23,7 @@ static NSURL *SWEDataFilesGetFrameworkURL() {
     return _SWEDataFilesGetBundle().resourceURL;
 }
 
+#if !(TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 static NSURL *SWEDataFilesGetExternalURL() {
     static NSURL *pathURL;
     static dispatch_once_t token;
@@ -37,6 +38,7 @@ static NSURL *SWEDataFilesGetExternalURL() {
     
     return pathURL;
 }
+#endif
 
 #if !(TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 void _SEGDataFilesCopyFrameworkPath(char *ephepath, __unused char *empty) {
@@ -45,10 +47,11 @@ void _SEGDataFilesCopyFrameworkPath(char *ephepath, __unused char *empty) {
 #endif
 
 void _SEGDataFilesCopyPathForFile(char *datapath, const char *fname, const char *ephepath) {
-#if !(TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
+#if !STATIC_LIBRARY
     NSFileManager *fm = [NSFileManager defaultManager];
     NSString *fileName = @(fname);
     
+#if !(TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
     // Application Support path
     // This is the escape hatch for code signing (immutable resources)
     NSURL *pathURL = SWEDataFilesGetExternalURL();
@@ -57,6 +60,7 @@ void _SEGDataFilesCopyPathForFile(char *datapath, const char *fname, const char 
         strcat(datapath, "/");
         return;
     }
+#endif
     
     // Given data path
     // There are no ast directories in the framework resources directory
@@ -74,6 +78,7 @@ void _SEGDataFilesCopyPathForFile(char *datapath, const char *fname, const char 
 void _SEGLibraryInitialize() {
     swe_set_ephe_path((char *)SWEDataFilesGetFrameworkURL().fileSystemRepresentation);
     
+#if !(TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
     NSURL *externalURL = SWEDataFilesGetExternalURL();
     if (![[NSFileManager defaultManager] fileExistsAtPath:externalURL.path]) {
         NSError *error;
@@ -83,6 +88,7 @@ void _SEGLibraryInitialize() {
             NSLog(@"Error creating Application Support directory: %@", error);
         }
     }
+#endif
 }
 
 void _SEGLibraryFinalize() {

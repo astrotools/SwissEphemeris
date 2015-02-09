@@ -1227,6 +1227,7 @@
 				EXECUTABLE_PREFIX = "";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
+					"STATIC_LIBRARY=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
@@ -1244,6 +1245,10 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				EXECUTABLE_PREFIX = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"STATIC_LIBRARY=1",
+					"$(inherited)",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
