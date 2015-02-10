@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		16B0655B1A8A77DD00702A06 /* Library */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 16B0655C1A8A77DD00702A06 /* Build configuration list for PBXAggregateTarget "Library" */;
+			buildPhases = (
+				16B0655F1A8A77E100702A06 /* Build library for each architecture */,
+				16B065611A8A781300702A06 /* Build universal binary */,
+				16B065621A8A782C00702A06 /* Copy additional files to universal directory */,
+				16B065631A8A784100702A06 /* Remove product directories */,
+			);
+			dependencies = (
+			);
+			name = Library;
+			productName = Library;
+		};
 		16B8A02B1A7BF28F00D5068B /* Framework */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 16B8A02C1A7BF28F00D5068B /* Build configuration list for PBXAggregateTarget "Framework" */;
@@ -27,6 +41,190 @@
 		160935FC1A7C152F002D2782 /* seasnam.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F261A7BF1A000D5068B /* seasnam.txt */; };
 		160935FE1A7C18FE002D2782 /* fixstars.cat in Resources */ = {isa = PBXBuildFile; fileRef = 160935FD1A7C18FE002D2782 /* fixstars.cat */; };
 		160936001A7C1B38002D2782 /* sedeltat.txt.inactive in Resources */ = {isa = PBXBuildFile; fileRef = 160935FF1A7C1B38002D2782 /* sedeltat.txt.inactive */; };
+		16B0654B1A8A776F00702A06 /* sweodef.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16B8A00B1A7BF26900D5068B /* sweodef.h */; };
+		16B0654D1A8A776F00702A06 /* swephexp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16B8A00E1A7BF26900D5068B /* swephexp.h */; };
+		16B0654E1A8A776F00702A06 /* UnexportedSymbols.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16B8A0141A7BF26900D5068B /* UnexportedSymbols.exp */; };
+		16B0654F1A8A778A00702A06 /* SwissEphGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0131A7BF26900D5068B /* SwissEphGlue.m */; };
+		16B065501A8A779200702A06 /* swecl.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B89FFF1A7BF26900D5068B /* swecl.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B065511A8A779200702A06 /* swedate.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0001A7BF26900D5068B /* swedate.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B065521A8A779200702A06 /* swehel.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0021A7BF26900D5068B /* swehel.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B065531A8A779200702A06 /* swehouse.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0031A7BF26900D5068B /* swehouse.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B065541A8A779200702A06 /* swejpl.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0051A7BF26900D5068B /* swejpl.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B065551A8A779200702A06 /* swemmoon.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0071A7BF26900D5068B /* swemmoon.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B065561A8A779200702A06 /* swemplan.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0081A7BF26900D5068B /* swemplan.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B065571A8A779200702A06 /* swepcalc.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0431A7BF49000D5068B /* swepcalc.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B065581A8A779200702A06 /* sweph.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A00C1A7BF26900D5068B /* sweph.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B065591A8A779200702A06 /* swephlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A00F1A7BF26900D5068B /* swephlib.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B065A11A8A7D2000702A06 /* LICENSE.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 160935FA1A7C14C6002D2782 /* LICENSE.TXT */; };
+		16B065A21A8A7D2000702A06 /* sepl_00.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC01A7BF1A000D5068B /* sepl_00.se1 */; };
+		16B065A31A8A7D2000702A06 /* sepl_06.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC11A7BF1A000D5068B /* sepl_06.se1 */; };
+		16B065A41A8A7D2000702A06 /* sepl_12.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC21A7BF1A000D5068B /* sepl_12.se1 */; };
+		16B065A51A8A7D2000702A06 /* sepl_18.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC31A7BF1A000D5068B /* sepl_18.se1 */; };
+		16B065A61A8A7D2000702A06 /* sepl_24.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC41A7BF1A000D5068B /* sepl_24.se1 */; };
+		16B065A71A8A7D2000702A06 /* sepl_30.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC51A7BF1A000D5068B /* sepl_30.se1 */; };
+		16B065A81A8A7D2000702A06 /* sepl_36.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC61A7BF1A000D5068B /* sepl_36.se1 */; };
+		16B065A91A8A7D2000702A06 /* sepl_42.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC71A7BF1A000D5068B /* sepl_42.se1 */; };
+		16B065AA1A8A7D2000702A06 /* sepl_48.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC81A7BF1A000D5068B /* sepl_48.se1 */; };
+		16B065AB1A8A7D2000702A06 /* sepl_54.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC91A7BF1A000D5068B /* sepl_54.se1 */; };
+		16B065AC1A8A7D2000702A06 /* sepl_60.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ECA1A7BF1A000D5068B /* sepl_60.se1 */; };
+		16B065AD1A8A7D2000702A06 /* sepl_66.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ECB1A7BF1A000D5068B /* sepl_66.se1 */; };
+		16B065AE1A8A7D2000702A06 /* sepl_72.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ECC1A7BF1A000D5068B /* sepl_72.se1 */; };
+		16B065AF1A8A7D2000702A06 /* sepl_78.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ECD1A7BF1A000D5068B /* sepl_78.se1 */; };
+		16B065B01A8A7D2000702A06 /* sepl_84.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ECE1A7BF1A000D5068B /* sepl_84.se1 */; };
+		16B065B11A8A7D2000702A06 /* sepl_90.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ECF1A7BF1A000D5068B /* sepl_90.se1 */; };
+		16B065B21A8A7D2000702A06 /* sepl_96.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ED01A7BF1A000D5068B /* sepl_96.se1 */; };
+		16B065B31A8A7D2000702A06 /* sepl_102.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ED11A7BF1A000D5068B /* sepl_102.se1 */; };
+		16B065B41A8A7D2000702A06 /* sepl_108.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ED21A7BF1A000D5068B /* sepl_108.se1 */; };
+		16B065B51A8A7D2000702A06 /* sepl_114.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ED31A7BF1A000D5068B /* sepl_114.se1 */; };
+		16B065B61A8A7D2000702A06 /* sepl_120.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ED41A7BF1A000D5068B /* sepl_120.se1 */; };
+		16B065B71A8A7D2000702A06 /* sepl_126.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ED51A7BF1A000D5068B /* sepl_126.se1 */; };
+		16B065B81A8A7D2000702A06 /* sepl_132.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ED61A7BF1A000D5068B /* sepl_132.se1 */; };
+		16B065B91A8A7D2000702A06 /* sepl_138.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ED71A7BF1A000D5068B /* sepl_138.se1 */; };
+		16B065BA1A8A7D2000702A06 /* sepl_144.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ED81A7BF1A000D5068B /* sepl_144.se1 */; };
+		16B065BB1A8A7D2000702A06 /* sepl_150.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89ED91A7BF1A000D5068B /* sepl_150.se1 */; };
+		16B065BC1A8A7D2000702A06 /* sepl_156.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EDA1A7BF1A000D5068B /* sepl_156.se1 */; };
+		16B065BD1A8A7D2000702A06 /* sepl_162.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EDB1A7BF1A000D5068B /* sepl_162.se1 */; };
+		16B065BE1A8A7D2000702A06 /* seplm06.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EDC1A7BF1A000D5068B /* seplm06.se1 */; };
+		16B065BF1A8A7D2000702A06 /* seplm12.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EDD1A7BF1A000D5068B /* seplm12.se1 */; };
+		16B065C01A8A7D2000702A06 /* seplm18.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EDE1A7BF1A000D5068B /* seplm18.se1 */; };
+		16B065C11A8A7D2000702A06 /* seplm24.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EDF1A7BF1A000D5068B /* seplm24.se1 */; };
+		16B065C21A8A7D2000702A06 /* seplm30.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EE01A7BF1A000D5068B /* seplm30.se1 */; };
+		16B065C31A8A7D2000702A06 /* seplm36.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EE11A7BF1A000D5068B /* seplm36.se1 */; };
+		16B065C41A8A7D2000702A06 /* seplm42.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EE21A7BF1A000D5068B /* seplm42.se1 */; };
+		16B065C51A8A7D2000702A06 /* seplm48.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EE31A7BF1A000D5068B /* seplm48.se1 */; };
+		16B065C61A8A7D2000702A06 /* seplm54.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EE41A7BF1A000D5068B /* seplm54.se1 */; };
+		16B065C71A8A7D2000702A06 /* seplm60.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EE51A7BF1A000D5068B /* seplm60.se1 */; };
+		16B065C81A8A7D2000702A06 /* seplm66.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EE61A7BF1A000D5068B /* seplm66.se1 */; };
+		16B065C91A8A7D2000702A06 /* seplm72.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EE71A7BF1A000D5068B /* seplm72.se1 */; };
+		16B065CA1A8A7D2000702A06 /* seplm78.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EE81A7BF1A000D5068B /* seplm78.se1 */; };
+		16B065CB1A8A7D2000702A06 /* seplm84.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EE91A7BF1A000D5068B /* seplm84.se1 */; };
+		16B065CC1A8A7D2000702A06 /* seplm90.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EEA1A7BF1A000D5068B /* seplm90.se1 */; };
+		16B065CD1A8A7D2000702A06 /* seplm96.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EEB1A7BF1A000D5068B /* seplm96.se1 */; };
+		16B065CE1A8A7D2000702A06 /* seplm102.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EEC1A7BF1A000D5068B /* seplm102.se1 */; };
+		16B065CF1A8A7D2000702A06 /* seplm108.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EED1A7BF1A000D5068B /* seplm108.se1 */; };
+		16B065D01A8A7D2000702A06 /* seplm114.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EEE1A7BF1A000D5068B /* seplm114.se1 */; };
+		16B065D11A8A7D2000702A06 /* seplm120.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EEF1A7BF1A000D5068B /* seplm120.se1 */; };
+		16B065D21A8A7D2000702A06 /* seplm126.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EF01A7BF1A000D5068B /* seplm126.se1 */; };
+		16B065D31A8A7D2000702A06 /* seplm132.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EF11A7BF1A000D5068B /* seplm132.se1 */; };
+		16B065D41A8A7D2000702A06 /* semo_00.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EF31A7BF1A000D5068B /* semo_00.se1 */; };
+		16B065D51A8A7D2000702A06 /* semo_06.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EF41A7BF1A000D5068B /* semo_06.se1 */; };
+		16B065D61A8A7D2000702A06 /* semo_12.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EF51A7BF1A000D5068B /* semo_12.se1 */; };
+		16B065D71A8A7D2000702A06 /* semo_18.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EF61A7BF1A000D5068B /* semo_18.se1 */; };
+		16B065D81A8A7D2000702A06 /* semo_24.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EF71A7BF1A000D5068B /* semo_24.se1 */; };
+		16B065D91A8A7D2000702A06 /* semo_30.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EF81A7BF1A000D5068B /* semo_30.se1 */; };
+		16B065DA1A8A7D2000702A06 /* semo_36.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EF91A7BF1A000D5068B /* semo_36.se1 */; };
+		16B065DB1A8A7D2000702A06 /* semo_42.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EFA1A7BF1A000D5068B /* semo_42.se1 */; };
+		16B065DC1A8A7D2000702A06 /* semo_48.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EFB1A7BF1A000D5068B /* semo_48.se1 */; };
+		16B065DD1A8A7D2000702A06 /* semo_54.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EFC1A7BF1A000D5068B /* semo_54.se1 */; };
+		16B065DE1A8A7D2000702A06 /* semo_60.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EFD1A7BF1A000D5068B /* semo_60.se1 */; };
+		16B065DF1A8A7D2000702A06 /* semo_66.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EFE1A7BF1A000D5068B /* semo_66.se1 */; };
+		16B065E01A8A7D2000702A06 /* semo_72.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EFF1A7BF1A000D5068B /* semo_72.se1 */; };
+		16B065E11A8A7D2000702A06 /* semo_78.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F001A7BF1A000D5068B /* semo_78.se1 */; };
+		16B065E21A8A7D2000702A06 /* semo_84.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F011A7BF1A000D5068B /* semo_84.se1 */; };
+		16B065E31A8A7D2000702A06 /* semo_90.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F021A7BF1A000D5068B /* semo_90.se1 */; };
+		16B065E41A8A7D2000702A06 /* semo_96.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F031A7BF1A000D5068B /* semo_96.se1 */; };
+		16B065E51A8A7D2000702A06 /* semo_102.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F041A7BF1A000D5068B /* semo_102.se1 */; };
+		16B065E61A8A7D2000702A06 /* semo_108.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F051A7BF1A000D5068B /* semo_108.se1 */; };
+		16B065E71A8A7D2000702A06 /* semo_114.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F061A7BF1A000D5068B /* semo_114.se1 */; };
+		16B065E81A8A7D2000702A06 /* semo_120.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F071A7BF1A000D5068B /* semo_120.se1 */; };
+		16B065E91A8A7D2000702A06 /* semo_126.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F081A7BF1A000D5068B /* semo_126.se1 */; };
+		16B065EA1A8A7D2000702A06 /* semo_132.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F091A7BF1A000D5068B /* semo_132.se1 */; };
+		16B065EB1A8A7D2000702A06 /* semo_138.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F0A1A7BF1A000D5068B /* semo_138.se1 */; };
+		16B065EC1A8A7D2000702A06 /* semo_144.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F0B1A7BF1A000D5068B /* semo_144.se1 */; };
+		16B065ED1A8A7D2000702A06 /* semo_150.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F0C1A7BF1A000D5068B /* semo_150.se1 */; };
+		16B065EE1A8A7D2000702A06 /* semo_156.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F0D1A7BF1A000D5068B /* semo_156.se1 */; };
+		16B065EF1A8A7D2000702A06 /* semo_162.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F0E1A7BF1A000D5068B /* semo_162.se1 */; };
+		16B065F01A8A7D2000702A06 /* semom06.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F0F1A7BF1A000D5068B /* semom06.se1 */; };
+		16B065F11A8A7D2000702A06 /* semom12.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F101A7BF1A000D5068B /* semom12.se1 */; };
+		16B065F21A8A7D2000702A06 /* semom18.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F111A7BF1A000D5068B /* semom18.se1 */; };
+		16B065F31A8A7D2000702A06 /* semom24.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F121A7BF1A000D5068B /* semom24.se1 */; };
+		16B065F41A8A7D2000702A06 /* semom30.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F131A7BF1A000D5068B /* semom30.se1 */; };
+		16B065F51A8A7D2000702A06 /* semom36.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F141A7BF1A000D5068B /* semom36.se1 */; };
+		16B065F61A8A7D2000702A06 /* semom42.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F151A7BF1A000D5068B /* semom42.se1 */; };
+		16B065F71A8A7D2000702A06 /* semom48.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F161A7BF1A000D5068B /* semom48.se1 */; };
+		16B065F81A8A7D2000702A06 /* semom54.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F171A7BF1A000D5068B /* semom54.se1 */; };
+		16B065F91A8A7D2000702A06 /* semom60.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F181A7BF1A000D5068B /* semom60.se1 */; };
+		16B065FA1A8A7D2000702A06 /* semom66.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F191A7BF1A000D5068B /* semom66.se1 */; };
+		16B065FB1A8A7D2000702A06 /* semom72.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F1A1A7BF1A000D5068B /* semom72.se1 */; };
+		16B065FC1A8A7D2000702A06 /* semom78.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F1B1A7BF1A000D5068B /* semom78.se1 */; };
+		16B065FD1A8A7D2000702A06 /* semom84.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F1C1A7BF1A000D5068B /* semom84.se1 */; };
+		16B065FE1A8A7D2000702A06 /* semom90.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F1D1A7BF1A000D5068B /* semom90.se1 */; };
+		16B065FF1A8A7D2000702A06 /* semom96.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F1E1A7BF1A000D5068B /* semom96.se1 */; };
+		16B066001A8A7D2000702A06 /* semom102.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F1F1A7BF1A000D5068B /* semom102.se1 */; };
+		16B066011A8A7D2000702A06 /* semom108.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F201A7BF1A000D5068B /* semom108.se1 */; };
+		16B066021A8A7D2000702A06 /* semom114.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F211A7BF1A000D5068B /* semom114.se1 */; };
+		16B066031A8A7D2000702A06 /* semom120.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F221A7BF1A000D5068B /* semom120.se1 */; };
+		16B066041A8A7D2000702A06 /* semom126.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F231A7BF1A000D5068B /* semom126.se1 */; };
+		16B066051A8A7D2000702A06 /* semom132.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F241A7BF1A000D5068B /* semom132.se1 */; };
+		16B066061A8A7D2000702A06 /* seasnam.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F261A7BF1A000D5068B /* seasnam.txt */; };
+		16B066071A8A7D2000702A06 /* seas_00.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F271A7BF1A000D5068B /* seas_00.se1 */; };
+		16B066081A8A7D2000702A06 /* seas_06.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F281A7BF1A000D5068B /* seas_06.se1 */; };
+		16B066091A8A7D2000702A06 /* seas_12.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F291A7BF1A000D5068B /* seas_12.se1 */; };
+		16B0660A1A8A7D2000702A06 /* seas_18.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F2A1A7BF1A000D5068B /* seas_18.se1 */; };
+		16B0660B1A8A7D2000702A06 /* seas_24.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F2B1A7BF1A000D5068B /* seas_24.se1 */; };
+		16B0660C1A8A7D2000702A06 /* seas_30.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F2C1A7BF1A000D5068B /* seas_30.se1 */; };
+		16B0660D1A8A7D2000702A06 /* seas_36.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F2D1A7BF1A000D5068B /* seas_36.se1 */; };
+		16B0660E1A8A7D2000702A06 /* seas_42.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F2E1A7BF1A000D5068B /* seas_42.se1 */; };
+		16B0660F1A8A7D2000702A06 /* seas_48.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F2F1A7BF1A000D5068B /* seas_48.se1 */; };
+		16B066101A8A7D2000702A06 /* seas_54.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F301A7BF1A000D5068B /* seas_54.se1 */; };
+		16B066111A8A7D2000702A06 /* seas_60.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F311A7BF1A000D5068B /* seas_60.se1 */; };
+		16B066121A8A7D2000702A06 /* seas_66.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F321A7BF1A000D5068B /* seas_66.se1 */; };
+		16B066131A8A7D2000702A06 /* seas_72.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F331A7BF1A000D5068B /* seas_72.se1 */; };
+		16B066141A8A7D2000702A06 /* seas_78.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F341A7BF1A000D5068B /* seas_78.se1 */; };
+		16B066151A8A7D2000702A06 /* seas_84.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F351A7BF1A000D5068B /* seas_84.se1 */; };
+		16B066161A8A7D2000702A06 /* seas_90.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F361A7BF1A000D5068B /* seas_90.se1 */; };
+		16B066171A8A7D2000702A06 /* seas_96.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F371A7BF1A000D5068B /* seas_96.se1 */; };
+		16B066181A8A7D2000702A06 /* seas_102.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F381A7BF1A000D5068B /* seas_102.se1 */; };
+		16B066191A8A7D2000702A06 /* seas_108.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F391A7BF1A000D5068B /* seas_108.se1 */; };
+		16B0661A1A8A7D2000702A06 /* seas_114.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F3A1A7BF1A000D5068B /* seas_114.se1 */; };
+		16B0661B1A8A7D2000702A06 /* seas_120.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F3B1A7BF1A000D5068B /* seas_120.se1 */; };
+		16B0661C1A8A7D2000702A06 /* seas_126.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F3C1A7BF1A000D5068B /* seas_126.se1 */; };
+		16B0661D1A8A7D2000702A06 /* seas_132.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F3D1A7BF1A000D5068B /* seas_132.se1 */; };
+		16B0661E1A8A7D2000702A06 /* seas_138.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F3E1A7BF1A000D5068B /* seas_138.se1 */; };
+		16B0661F1A8A7D2000702A06 /* seas_144.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F3F1A7BF1A000D5068B /* seas_144.se1 */; };
+		16B066201A8A7D2000702A06 /* seas_150.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F401A7BF1A000D5068B /* seas_150.se1 */; };
+		16B066211A8A7D2000702A06 /* seas_156.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F411A7BF1A000D5068B /* seas_156.se1 */; };
+		16B066221A8A7D2000702A06 /* seas_162.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F421A7BF1A000D5068B /* seas_162.se1 */; };
+		16B066231A8A7D2000702A06 /* seasm06.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F431A7BF1A000D5068B /* seasm06.se1 */; };
+		16B066241A8A7D2000702A06 /* seasm12.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F441A7BF1A000D5068B /* seasm12.se1 */; };
+		16B066251A8A7D2000702A06 /* seasm18.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F451A7BF1A000D5068B /* seasm18.se1 */; };
+		16B066261A8A7D2000702A06 /* seasm24.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F461A7BF1A000D5068B /* seasm24.se1 */; };
+		16B066271A8A7D2000702A06 /* seasm30.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F471A7BF1A000D5068B /* seasm30.se1 */; };
+		16B066281A8A7D2000702A06 /* seasm36.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F481A7BF1A000D5068B /* seasm36.se1 */; };
+		16B066291A8A7D2000702A06 /* seasm42.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F491A7BF1A000D5068B /* seasm42.se1 */; };
+		16B0662A1A8A7D2000702A06 /* seasm48.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F4A1A7BF1A000D5068B /* seasm48.se1 */; };
+		16B0662B1A8A7D2000702A06 /* seasm54.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F4B1A7BF1A000D5068B /* seasm54.se1 */; };
+		16B0662C1A8A7D2000702A06 /* seasm60.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F4C1A7BF1A000D5068B /* seasm60.se1 */; };
+		16B0662D1A8A7D2000702A06 /* seasm66.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F4D1A7BF1A000D5068B /* seasm66.se1 */; };
+		16B0662E1A8A7D2000702A06 /* seasm72.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F4E1A7BF1A000D5068B /* seasm72.se1 */; };
+		16B0662F1A8A7D2000702A06 /* seasm78.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F4F1A7BF1A000D5068B /* seasm78.se1 */; };
+		16B066301A8A7D2000702A06 /* seasm84.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F501A7BF1A000D5068B /* seasm84.se1 */; };
+		16B066311A8A7D2000702A06 /* seasm90.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F511A7BF1A000D5068B /* seasm90.se1 */; };
+		16B066321A8A7D2000702A06 /* seasm96.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F521A7BF1A000D5068B /* seasm96.se1 */; };
+		16B066331A8A7D2000702A06 /* seasm102.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F531A7BF1A000D5068B /* seasm102.se1 */; };
+		16B066341A8A7D2000702A06 /* seasm108.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F541A7BF1A000D5068B /* seasm108.se1 */; };
+		16B066351A8A7D2000702A06 /* seasm114.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F551A7BF1A000D5068B /* seasm114.se1 */; };
+		16B066361A8A7D2000702A06 /* seasm120.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F561A7BF1A000D5068B /* seasm120.se1 */; };
+		16B066371A8A7D2000702A06 /* seasm126.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F571A7BF1A000D5068B /* seasm126.se1 */; };
+		16B066381A8A7D2100702A06 /* seasm132.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F581A7BF1A000D5068B /* seasm132.se1 */; };
+		16B066391A8A7D2100702A06 /* se07066.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F5A1A7BF1A000D5068B /* se07066.se1 */; };
+		16B0663A1A8A7D2100702A06 /* seorbel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F5D1A7BF1A000D5068B /* seorbel.txt */; };
+		16B0663B1A8A7D2100702A06 /* fixstars.cat in Resources */ = {isa = PBXBuildFile; fileRef = 160935FD1A7C18FE002D2782 /* fixstars.cat */; };
+		16B0663C1A8A7D2100702A06 /* sefstars.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F5F1A7BF1A000D5068B /* sefstars.txt */; };
+		16B0663D1A8A7D2100702A06 /* sedeltat.txt.inactive in Resources */ = {isa = PBXBuildFile; fileRef = 160935FF1A7C1B38002D2782 /* sedeltat.txt.inactive */; };
+		16B0663E1A8A7D2100702A06 /* seleapsec.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F611A7BF1A000D5068B /* seleapsec.txt */; };
+		16B0663F1A8A7D2B00702A06 /* sweodef.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B8A00B1A7BF26900D5068B /* sweodef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16B066411A8A7D2B00702A06 /* swephexp.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B8A00E1A7BF26900D5068B /* swephexp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16B066421A8A7D5E00702A06 /* SwissEphGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0131A7BF26900D5068B /* SwissEphGlue.m */; };
+		16B066431A8A7D6600702A06 /* swecl.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B89FFF1A7BF26900D5068B /* swecl.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B066441A8A7D6600702A06 /* swedate.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0001A7BF26900D5068B /* swedate.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B066451A8A7D6600702A06 /* swehel.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0021A7BF26900D5068B /* swehel.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B066461A8A7D6600702A06 /* swehouse.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0031A7BF26900D5068B /* swehouse.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B066471A8A7D6600702A06 /* swejpl.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0051A7BF26900D5068B /* swejpl.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B066481A8A7D6600702A06 /* swemmoon.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0071A7BF26900D5068B /* swemmoon.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B066491A8A7D6600702A06 /* swemplan.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0081A7BF26900D5068B /* swemplan.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B0664A1A8A7D6600702A06 /* sweph.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A00C1A7BF26900D5068B /* sweph.c */; settings = {COMPILER_FLAGS = "-w"; }; };
+		16B0664B1A8A7D6600702A06 /* swephlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A00F1A7BF26900D5068B /* swephlib.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		16B89F641A7BF1A000D5068B /* sepl_00.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC01A7BF1A000D5068B /* sepl_00.se1 */; };
 		16B89F651A7BF1A000D5068B /* sepl_06.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC11A7BF1A000D5068B /* sepl_06.se1 */; };
 		16B89F661A7BF1A000D5068B /* sepl_12.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89EC21A7BF1A000D5068B /* sepl_12.se1 */; };
@@ -230,10 +428,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		16B065491A8A773800702A06 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				16B0654B1A8A776F00702A06 /* sweodef.h in CopyFiles */,
+				16B0654D1A8A776F00702A06 /* swephexp.h in CopyFiles */,
+				16B0654E1A8A776F00702A06 /* UnexportedSymbols.exp in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		160935FA1A7C14C6002D2782 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
 		160935FD1A7C18FE002D2782 /* fixstars.cat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fixstars.cat; sourceTree = "<group>"; };
 		160935FF1A7C1B38002D2782 /* sedeltat.txt.inactive */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sedeltat.txt.inactive; sourceTree = "<group>"; };
+		16B065321A8A76B800702A06 /* libSwissEphemeris.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwissEphemeris.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B065871A8A7A1200702A06 /* SwissEphemeris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwissEphemeris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16B065A01A8A7CB300702A06 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		16B89EA41A7BF08000D5068B /* SwissEphemeris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwissEphemeris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B89EA81A7BF08000D5068B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16B89EC01A7BF1A000D5068B /* sepl_00.se1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sepl_00.se1; sourceTree = "<group>"; };
@@ -449,6 +665,7 @@
 		16B89E9A1A7BF08000D5068B = {
 			isa = PBXGroup;
 			children = (
+				16B065A01A8A7CB300702A06 /* README.md */,
 				16B8A0121A7BF26900D5068B /* SwissEphGlue.h */,
 				16B8A0131A7BF26900D5068B /* SwissEphGlue.m */,
 				16B89EA61A7BF08000D5068B /* SwissEph */,
@@ -463,6 +680,8 @@
 			children = (
 				16B89EA41A7BF08000D5068B /* SwissEphemeris.framework */,
 				16B8A0361A7BF2E900D5068B /* swetest */,
+				16B065321A8A76B800702A06 /* libSwissEphemeris.a */,
+				16B065871A8A7A1200702A06 /* SwissEphemeris.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -739,6 +958,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		16B065841A8A7A1200702A06 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B066411A8A7D2B00702A06 /* swephexp.h in Headers */,
+				16B0663F1A8A7D2B00702A06 /* sweodef.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		16B89EA11A7BF08000D5068B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -759,9 +987,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		16B89EA31A7BF08000D5068B /* SwissEphemeris */ = {
+		16B065311A8A76B800702A06 /* libSwissEphemeris */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 16B89EBA1A7BF08000D5068B /* Build configuration list for PBXNativeTarget "SwissEphemeris" */;
+			buildConfigurationList = 16B065431A8A76B800702A06 /* Build configuration list for PBXNativeTarget "libSwissEphemeris" */;
+			buildPhases = (
+				16B0652E1A8A76B800702A06 /* Sources */,
+				16B065491A8A773800702A06 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libSwissEphemeris;
+			productName = SwissEphemeris;
+			productReference = 16B065321A8A76B800702A06 /* libSwissEphemeris.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		16B065861A8A7A1200702A06 /* SwissEphemeris-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16B0659A1A8A7A1200702A06 /* Build configuration list for PBXNativeTarget "SwissEphemeris-iOS" */;
+			buildPhases = (
+				16B065821A8A7A1200702A06 /* Sources */,
+				16B065841A8A7A1200702A06 /* Headers */,
+				16B065851A8A7A1200702A06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwissEphemeris-iOS";
+			productName = SwissEphemeris;
+			productReference = 16B065871A8A7A1200702A06 /* SwissEphemeris.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		16B89EA31A7BF08000D5068B /* SwissEphemeris-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 16B89EBA1A7BF08000D5068B /* Build configuration list for PBXNativeTarget "SwissEphemeris-OSX" */;
 			buildPhases = (
 				16B89E9F1A7BF08000D5068B /* Sources */,
 				16B89EA01A7BF08000D5068B /* Frameworks */,
@@ -772,7 +1033,7 @@
 			);
 			dependencies = (
 			);
-			name = SwissEphemeris;
+			name = "SwissEphemeris-OSX";
 			productName = SwissEphemeris;
 			productReference = 16B89EA41A7BF08000D5068B /* SwissEphemeris.framework */;
 			productType = "com.apple.product-type.framework";
@@ -804,6 +1065,15 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Astrodienst AG";
 				TargetAttributes = {
+					16B065311A8A76B800702A06 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					16B0655B1A8A77DD00702A06 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					16B065861A8A7A1200702A06 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					16B89EA31A7BF08000D5068B = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -815,7 +1085,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 16B89E9E1A7BF08000D5068B /* Build configuration list for PBXProject "SwissEphemeris-OSX" */;
+			buildConfigurationList = 16B89E9E1A7BF08000D5068B /* Build configuration list for PBXProject "SwissEphemeris" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -827,14 +1097,182 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				16B89EA31A7BF08000D5068B /* SwissEphemeris */,
+				16B89EA31A7BF08000D5068B /* SwissEphemeris-OSX */,
 				16B8A0351A7BF2E900D5068B /* swetest */,
 				16B8A02B1A7BF28F00D5068B /* Framework */,
+				16B065311A8A76B800702A06 /* libSwissEphemeris */,
+				16B0655B1A8A77DD00702A06 /* Library */,
+				16B065861A8A7A1200702A06 /* SwissEphemeris-iOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		16B065851A8A7A1200702A06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B065A11A8A7D2000702A06 /* LICENSE.TXT in Resources */,
+				16B065A21A8A7D2000702A06 /* sepl_00.se1 in Resources */,
+				16B065A31A8A7D2000702A06 /* sepl_06.se1 in Resources */,
+				16B065A41A8A7D2000702A06 /* sepl_12.se1 in Resources */,
+				16B065A51A8A7D2000702A06 /* sepl_18.se1 in Resources */,
+				16B065A61A8A7D2000702A06 /* sepl_24.se1 in Resources */,
+				16B065A71A8A7D2000702A06 /* sepl_30.se1 in Resources */,
+				16B065A81A8A7D2000702A06 /* sepl_36.se1 in Resources */,
+				16B065A91A8A7D2000702A06 /* sepl_42.se1 in Resources */,
+				16B065AA1A8A7D2000702A06 /* sepl_48.se1 in Resources */,
+				16B065AB1A8A7D2000702A06 /* sepl_54.se1 in Resources */,
+				16B065AC1A8A7D2000702A06 /* sepl_60.se1 in Resources */,
+				16B065AD1A8A7D2000702A06 /* sepl_66.se1 in Resources */,
+				16B065AE1A8A7D2000702A06 /* sepl_72.se1 in Resources */,
+				16B065AF1A8A7D2000702A06 /* sepl_78.se1 in Resources */,
+				16B065B01A8A7D2000702A06 /* sepl_84.se1 in Resources */,
+				16B065B11A8A7D2000702A06 /* sepl_90.se1 in Resources */,
+				16B065B21A8A7D2000702A06 /* sepl_96.se1 in Resources */,
+				16B065B31A8A7D2000702A06 /* sepl_102.se1 in Resources */,
+				16B065B41A8A7D2000702A06 /* sepl_108.se1 in Resources */,
+				16B065B51A8A7D2000702A06 /* sepl_114.se1 in Resources */,
+				16B065B61A8A7D2000702A06 /* sepl_120.se1 in Resources */,
+				16B065B71A8A7D2000702A06 /* sepl_126.se1 in Resources */,
+				16B065B81A8A7D2000702A06 /* sepl_132.se1 in Resources */,
+				16B065B91A8A7D2000702A06 /* sepl_138.se1 in Resources */,
+				16B065BA1A8A7D2000702A06 /* sepl_144.se1 in Resources */,
+				16B065BB1A8A7D2000702A06 /* sepl_150.se1 in Resources */,
+				16B065BC1A8A7D2000702A06 /* sepl_156.se1 in Resources */,
+				16B065BD1A8A7D2000702A06 /* sepl_162.se1 in Resources */,
+				16B065BE1A8A7D2000702A06 /* seplm06.se1 in Resources */,
+				16B065BF1A8A7D2000702A06 /* seplm12.se1 in Resources */,
+				16B065C01A8A7D2000702A06 /* seplm18.se1 in Resources */,
+				16B065C11A8A7D2000702A06 /* seplm24.se1 in Resources */,
+				16B065C21A8A7D2000702A06 /* seplm30.se1 in Resources */,
+				16B065C31A8A7D2000702A06 /* seplm36.se1 in Resources */,
+				16B065C41A8A7D2000702A06 /* seplm42.se1 in Resources */,
+				16B065C51A8A7D2000702A06 /* seplm48.se1 in Resources */,
+				16B065C61A8A7D2000702A06 /* seplm54.se1 in Resources */,
+				16B065C71A8A7D2000702A06 /* seplm60.se1 in Resources */,
+				16B065C81A8A7D2000702A06 /* seplm66.se1 in Resources */,
+				16B065C91A8A7D2000702A06 /* seplm72.se1 in Resources */,
+				16B065CA1A8A7D2000702A06 /* seplm78.se1 in Resources */,
+				16B065CB1A8A7D2000702A06 /* seplm84.se1 in Resources */,
+				16B065CC1A8A7D2000702A06 /* seplm90.se1 in Resources */,
+				16B065CD1A8A7D2000702A06 /* seplm96.se1 in Resources */,
+				16B065CE1A8A7D2000702A06 /* seplm102.se1 in Resources */,
+				16B065CF1A8A7D2000702A06 /* seplm108.se1 in Resources */,
+				16B065D01A8A7D2000702A06 /* seplm114.se1 in Resources */,
+				16B065D11A8A7D2000702A06 /* seplm120.se1 in Resources */,
+				16B065D21A8A7D2000702A06 /* seplm126.se1 in Resources */,
+				16B065D31A8A7D2000702A06 /* seplm132.se1 in Resources */,
+				16B065D41A8A7D2000702A06 /* semo_00.se1 in Resources */,
+				16B065D51A8A7D2000702A06 /* semo_06.se1 in Resources */,
+				16B065D61A8A7D2000702A06 /* semo_12.se1 in Resources */,
+				16B065D71A8A7D2000702A06 /* semo_18.se1 in Resources */,
+				16B065D81A8A7D2000702A06 /* semo_24.se1 in Resources */,
+				16B065D91A8A7D2000702A06 /* semo_30.se1 in Resources */,
+				16B065DA1A8A7D2000702A06 /* semo_36.se1 in Resources */,
+				16B065DB1A8A7D2000702A06 /* semo_42.se1 in Resources */,
+				16B065DC1A8A7D2000702A06 /* semo_48.se1 in Resources */,
+				16B065DD1A8A7D2000702A06 /* semo_54.se1 in Resources */,
+				16B065DE1A8A7D2000702A06 /* semo_60.se1 in Resources */,
+				16B065DF1A8A7D2000702A06 /* semo_66.se1 in Resources */,
+				16B065E01A8A7D2000702A06 /* semo_72.se1 in Resources */,
+				16B065E11A8A7D2000702A06 /* semo_78.se1 in Resources */,
+				16B065E21A8A7D2000702A06 /* semo_84.se1 in Resources */,
+				16B065E31A8A7D2000702A06 /* semo_90.se1 in Resources */,
+				16B065E41A8A7D2000702A06 /* semo_96.se1 in Resources */,
+				16B065E51A8A7D2000702A06 /* semo_102.se1 in Resources */,
+				16B065E61A8A7D2000702A06 /* semo_108.se1 in Resources */,
+				16B065E71A8A7D2000702A06 /* semo_114.se1 in Resources */,
+				16B065E81A8A7D2000702A06 /* semo_120.se1 in Resources */,
+				16B065E91A8A7D2000702A06 /* semo_126.se1 in Resources */,
+				16B065EA1A8A7D2000702A06 /* semo_132.se1 in Resources */,
+				16B065EB1A8A7D2000702A06 /* semo_138.se1 in Resources */,
+				16B065EC1A8A7D2000702A06 /* semo_144.se1 in Resources */,
+				16B065ED1A8A7D2000702A06 /* semo_150.se1 in Resources */,
+				16B065EE1A8A7D2000702A06 /* semo_156.se1 in Resources */,
+				16B065EF1A8A7D2000702A06 /* semo_162.se1 in Resources */,
+				16B065F01A8A7D2000702A06 /* semom06.se1 in Resources */,
+				16B065F11A8A7D2000702A06 /* semom12.se1 in Resources */,
+				16B065F21A8A7D2000702A06 /* semom18.se1 in Resources */,
+				16B065F31A8A7D2000702A06 /* semom24.se1 in Resources */,
+				16B065F41A8A7D2000702A06 /* semom30.se1 in Resources */,
+				16B065F51A8A7D2000702A06 /* semom36.se1 in Resources */,
+				16B065F61A8A7D2000702A06 /* semom42.se1 in Resources */,
+				16B065F71A8A7D2000702A06 /* semom48.se1 in Resources */,
+				16B065F81A8A7D2000702A06 /* semom54.se1 in Resources */,
+				16B065F91A8A7D2000702A06 /* semom60.se1 in Resources */,
+				16B065FA1A8A7D2000702A06 /* semom66.se1 in Resources */,
+				16B065FB1A8A7D2000702A06 /* semom72.se1 in Resources */,
+				16B065FC1A8A7D2000702A06 /* semom78.se1 in Resources */,
+				16B065FD1A8A7D2000702A06 /* semom84.se1 in Resources */,
+				16B065FE1A8A7D2000702A06 /* semom90.se1 in Resources */,
+				16B065FF1A8A7D2000702A06 /* semom96.se1 in Resources */,
+				16B066001A8A7D2000702A06 /* semom102.se1 in Resources */,
+				16B066011A8A7D2000702A06 /* semom108.se1 in Resources */,
+				16B066021A8A7D2000702A06 /* semom114.se1 in Resources */,
+				16B066031A8A7D2000702A06 /* semom120.se1 in Resources */,
+				16B066041A8A7D2000702A06 /* semom126.se1 in Resources */,
+				16B066051A8A7D2000702A06 /* semom132.se1 in Resources */,
+				16B066061A8A7D2000702A06 /* seasnam.txt in Resources */,
+				16B066071A8A7D2000702A06 /* seas_00.se1 in Resources */,
+				16B066081A8A7D2000702A06 /* seas_06.se1 in Resources */,
+				16B066091A8A7D2000702A06 /* seas_12.se1 in Resources */,
+				16B0660A1A8A7D2000702A06 /* seas_18.se1 in Resources */,
+				16B0660B1A8A7D2000702A06 /* seas_24.se1 in Resources */,
+				16B0660C1A8A7D2000702A06 /* seas_30.se1 in Resources */,
+				16B0660D1A8A7D2000702A06 /* seas_36.se1 in Resources */,
+				16B0660E1A8A7D2000702A06 /* seas_42.se1 in Resources */,
+				16B0660F1A8A7D2000702A06 /* seas_48.se1 in Resources */,
+				16B066101A8A7D2000702A06 /* seas_54.se1 in Resources */,
+				16B066111A8A7D2000702A06 /* seas_60.se1 in Resources */,
+				16B066121A8A7D2000702A06 /* seas_66.se1 in Resources */,
+				16B066131A8A7D2000702A06 /* seas_72.se1 in Resources */,
+				16B066141A8A7D2000702A06 /* seas_78.se1 in Resources */,
+				16B066151A8A7D2000702A06 /* seas_84.se1 in Resources */,
+				16B066161A8A7D2000702A06 /* seas_90.se1 in Resources */,
+				16B066171A8A7D2000702A06 /* seas_96.se1 in Resources */,
+				16B066181A8A7D2000702A06 /* seas_102.se1 in Resources */,
+				16B066191A8A7D2000702A06 /* seas_108.se1 in Resources */,
+				16B0661A1A8A7D2000702A06 /* seas_114.se1 in Resources */,
+				16B0661B1A8A7D2000702A06 /* seas_120.se1 in Resources */,
+				16B0661C1A8A7D2000702A06 /* seas_126.se1 in Resources */,
+				16B0661D1A8A7D2000702A06 /* seas_132.se1 in Resources */,
+				16B0661E1A8A7D2000702A06 /* seas_138.se1 in Resources */,
+				16B0661F1A8A7D2000702A06 /* seas_144.se1 in Resources */,
+				16B066201A8A7D2000702A06 /* seas_150.se1 in Resources */,
+				16B066211A8A7D2000702A06 /* seas_156.se1 in Resources */,
+				16B066221A8A7D2000702A06 /* seas_162.se1 in Resources */,
+				16B066231A8A7D2000702A06 /* seasm06.se1 in Resources */,
+				16B066241A8A7D2000702A06 /* seasm12.se1 in Resources */,
+				16B066251A8A7D2000702A06 /* seasm18.se1 in Resources */,
+				16B066261A8A7D2000702A06 /* seasm24.se1 in Resources */,
+				16B066271A8A7D2000702A06 /* seasm30.se1 in Resources */,
+				16B066281A8A7D2000702A06 /* seasm36.se1 in Resources */,
+				16B066291A8A7D2000702A06 /* seasm42.se1 in Resources */,
+				16B0662A1A8A7D2000702A06 /* seasm48.se1 in Resources */,
+				16B0662B1A8A7D2000702A06 /* seasm54.se1 in Resources */,
+				16B0662C1A8A7D2000702A06 /* seasm60.se1 in Resources */,
+				16B0662D1A8A7D2000702A06 /* seasm66.se1 in Resources */,
+				16B0662E1A8A7D2000702A06 /* seasm72.se1 in Resources */,
+				16B0662F1A8A7D2000702A06 /* seasm78.se1 in Resources */,
+				16B066301A8A7D2000702A06 /* seasm84.se1 in Resources */,
+				16B066311A8A7D2000702A06 /* seasm90.se1 in Resources */,
+				16B066321A8A7D2000702A06 /* seasm96.se1 in Resources */,
+				16B066331A8A7D2000702A06 /* seasm102.se1 in Resources */,
+				16B066341A8A7D2000702A06 /* seasm108.se1 in Resources */,
+				16B066351A8A7D2000702A06 /* seasm114.se1 in Resources */,
+				16B066361A8A7D2000702A06 /* seasm120.se1 in Resources */,
+				16B066371A8A7D2000702A06 /* seasm126.se1 in Resources */,
+				16B066381A8A7D2100702A06 /* seasm132.se1 in Resources */,
+				16B066391A8A7D2100702A06 /* se07066.se1 in Resources */,
+				16B0663A1A8A7D2100702A06 /* seorbel.txt in Resources */,
+				16B0663B1A8A7D2100702A06 /* fixstars.cat in Resources */,
+				16B0663C1A8A7D2100702A06 /* sefstars.txt in Resources */,
+				16B0663D1A8A7D2100702A06 /* sedeltat.txt.inactive in Resources */,
+				16B0663E1A8A7D2100702A06 /* seleapsec.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		16B89EA21A7BF08000D5068B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1003,6 +1441,62 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		16B0655F1A8A77E100702A06 /* Build library for each architecture */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build library for each architecture";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "xcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -scheme libSwissEphemeris -configuration ${CONFIGURATION} $ACTION TARGET_BUILD_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\" BUILT_PRODUCTS_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\"\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -scheme libSwissEphemeris -configuration ${CONFIGURATION} $ACTION TARGET_BUILD_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\" BUILT_PRODUCTS_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n";
+		};
+		16B065611A8A781300702A06 /* Build universal binary */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build universal binary";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "LIBRARY_NAME=\"libSwissEphemeris.a\"\n\nSIMULATOR_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\"\nDEVICE_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nSIMULATOR_LIBRARY_PATH=\"${SIMULATOR_LIBRARY_DIR}/${LIBRARY_NAME}\"\nDEVICE_LIBRARY_PATH=\"${DEVICE_LIBRARY_DIR}/${LIBRARY_NAME}\"\nUNIVERSAL_LIBRARY_PATH=\"${UNIVERSAL_LIBRARY_DIR}/${LIBRARY_NAME}\"\n\nmkdir -p \"${UNIVERSAL_LIBRARY_DIR}\"\nlipo \"${SIMULATOR_LIBRARY_PATH}\" \"${DEVICE_LIBRARY_PATH}\" -create -output \"${UNIVERSAL_LIBRARY_PATH}\"\n";
+		};
+		16B065621A8A782C00702A06 /* Copy additional files to universal directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy additional files to universal directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "DEVICE_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\ncp \"${DEVICE_LIBRARY_DIR}/swephexp.h\" \"${UNIVERSAL_LIBRARY_DIR}\"\ncp \"${DEVICE_LIBRARY_DIR}/sweodef.h\" \"${UNIVERSAL_LIBRARY_DIR}\"\ncp \"${DEVICE_LIBRARY_DIR}/UnexportedSymbols.exp\" \"${UNIVERSAL_LIBRARY_DIR}\"\n";
+		};
+		16B065631A8A784100702A06 /* Remove product directories */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Remove product directories";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SIMULATOR_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\"\nDEVICE_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n\nrm \"${SIMULATOR_LIBRARY_DIR}/libSwissEphemeris.a\" \"${SIMULATOR_LIBRARY_DIR}/sweodef.h\" \"${SIMULATOR_LIBRARY_DIR}/swephexp.h\" \"${SIMULATOR_LIBRARY_DIR}/UnexportedSymbols.exp\"\nrm \"${DEVICE_LIBRARY_DIR}/libSwissEphemeris.a\" \"${DEVICE_LIBRARY_DIR}/sweodef.h\" \"${DEVICE_LIBRARY_DIR}/swephexp.h\" \"${DEVICE_LIBRARY_DIR}/UnexportedSymbols.exp\"\n";
+		};
 		16B8A0311A7BF29C00D5068B /* Copy swetest into Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1020,6 +1514,41 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		16B0652E1A8A76B800702A06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B065501A8A779200702A06 /* swecl.c in Sources */,
+				16B065511A8A779200702A06 /* swedate.c in Sources */,
+				16B065521A8A779200702A06 /* swehel.c in Sources */,
+				16B065531A8A779200702A06 /* swehouse.c in Sources */,
+				16B065541A8A779200702A06 /* swejpl.c in Sources */,
+				16B065551A8A779200702A06 /* swemmoon.c in Sources */,
+				16B065561A8A779200702A06 /* swemplan.c in Sources */,
+				16B065571A8A779200702A06 /* swepcalc.c in Sources */,
+				16B065581A8A779200702A06 /* sweph.c in Sources */,
+				16B065591A8A779200702A06 /* swephlib.c in Sources */,
+				16B0654F1A8A778A00702A06 /* SwissEphGlue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16B065821A8A7A1200702A06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16B066431A8A7D6600702A06 /* swecl.c in Sources */,
+				16B066441A8A7D6600702A06 /* swedate.c in Sources */,
+				16B066451A8A7D6600702A06 /* swehel.c in Sources */,
+				16B066461A8A7D6600702A06 /* swehouse.c in Sources */,
+				16B066471A8A7D6600702A06 /* swejpl.c in Sources */,
+				16B066481A8A7D6600702A06 /* swemmoon.c in Sources */,
+				16B066491A8A7D6600702A06 /* swemplan.c in Sources */,
+				16B0664A1A8A7D6600702A06 /* sweph.c in Sources */,
+				16B0664B1A8A7D6600702A06 /* swephlib.c in Sources */,
+				16B066421A8A7D5E00702A06 /* SwissEphGlue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		16B89E9F1A7BF08000D5068B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1051,7 +1580,7 @@
 /* Begin PBXTargetDependency section */
 		16B8A0301A7BF29A00D5068B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 16B89EA31A7BF08000D5068B /* SwissEphemeris */;
+			target = 16B89EA31A7BF08000D5068B /* SwissEphemeris-OSX */;
 			targetProxy = 16B8A02F1A7BF29A00D5068B /* PBXContainerItemProxy */;
 		};
 		16B8A03E1A7BF2F300D5068B /* PBXTargetDependency */ = {
@@ -1061,12 +1590,112 @@
 		};
 		16B8A0401A7BF2FB00D5068B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 16B89EA31A7BF08000D5068B /* SwissEphemeris */;
+			target = 16B89EA31A7BF08000D5068B /* SwissEphemeris-OSX */;
 			targetProxy = 16B8A03F1A7BF2FB00D5068B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		16B065441A8A76B800702A06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"STATIC_LIBRARY=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = SwissEphemeris;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				UNEXPORTED_SYMBOLS_FILE = SwissEphemeris/UnexportedSymbols.exp;
+			};
+			name = Debug;
+		};
+		16B065451A8A76B800702A06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = "STATIC_LIBRARY=1 ";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = SwissEphemeris;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				UNEXPORTED_SYMBOLS_FILE = SwissEphemeris/UnexportedSymbols.exp;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16B0655D1A8A77DD00702A06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		16B0655E1A8A77DD00702A06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		16B0659B1A8A7A1200702A06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = SwissEphemeris/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = SwissEphemeris/SwissEphemeris.modulemap;
+				PRODUCT_NAME = SwissEphemeris;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		16B0659C1A8A7A1200702A06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]" = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwissEphemeris/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = SwissEphemeris/SwissEphemeris.modulemap;
+				PRODUCT_NAME = SwissEphemeris;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		16B89EB81A7BF08000D5068B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1152,8 +1781,9 @@
 				INFOPLIST_FILE = SwissEphemeris/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MODULEMAP_FILE = SwissEphemeris/SwissEphemeris.modulemap;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwissEphemeris;
 				SKIP_INSTALL = YES;
 				UNEXPORTED_SYMBOLS_FILE = SwissEphemeris/UnexportedSymbols.exp;
 			};
@@ -1169,8 +1799,9 @@
 				INFOPLIST_FILE = SwissEphemeris/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				MODULEMAP_FILE = SwissEphemeris/SwissEphemeris.modulemap;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SwissEphemeris;
 				SKIP_INSTALL = YES;
 				UNEXPORTED_SYMBOLS_FILE = SwissEphemeris/UnexportedSymbols.exp;
 			};
@@ -1213,7 +1844,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		16B89E9E1A7BF08000D5068B /* Build configuration list for PBXProject "SwissEphemeris-OSX" */ = {
+		16B065431A8A76B800702A06 /* Build configuration list for PBXNativeTarget "libSwissEphemeris" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16B065441A8A76B800702A06 /* Debug */,
+				16B065451A8A76B800702A06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16B0655C1A8A77DD00702A06 /* Build configuration list for PBXAggregateTarget "Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16B0655D1A8A77DD00702A06 /* Debug */,
+				16B0655E1A8A77DD00702A06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16B0659A1A8A7A1200702A06 /* Build configuration list for PBXNativeTarget "SwissEphemeris-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				16B0659B1A8A7A1200702A06 /* Debug */,
+				16B0659C1A8A7A1200702A06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		16B89E9E1A7BF08000D5068B /* Build configuration list for PBXProject "SwissEphemeris" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16B89EB81A7BF08000D5068B /* Debug */,
@@ -1222,7 +1880,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		16B89EBA1A7BF08000D5068B /* Build configuration list for PBXNativeTarget "SwissEphemeris" */ = {
+		16B89EBA1A7BF08000D5068B /* Build configuration list for PBXNativeTarget "SwissEphemeris-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				16B89EBB1A7BF08000D5068B /* Debug */,

@@ -14,24 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16B89EA31A7BF08000D5068B"
-               BuildableName = "SwissEphemeris.framework"
-               BlueprintName = "SwissEphemeris"
-               ReferencedContainer = "container:SwissEphemeris-OSX.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16B89EAE1A7BF08000D5068B"
-               BuildableName = "SwissEphemerisTests.xctest"
-               BlueprintName = "SwissEphemerisTests"
-               ReferencedContainer = "container:SwissEphemeris-OSX.xcodeproj">
+               BlueprintIdentifier = "16B8A0351A7BF2E900D5068B"
+               BuildableName = "swetest"
+               BlueprintName = "swetest"
+               ReferencedContainer = "container:SwissEphemeris.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16B89EAE1A7BF08000D5068B"
-               BuildableName = "SwissEphemerisTests.xctest"
-               BlueprintName = "SwissEphemerisTests"
-               ReferencedContainer = "container:SwissEphemeris-OSX.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16B89EA31A7BF08000D5068B"
-            BuildableName = "SwissEphemeris.framework"
-            BlueprintName = "SwissEphemeris"
-            ReferencedContainer = "container:SwissEphemeris-OSX.xcodeproj">
+            BlueprintIdentifier = "16B8A0351A7BF2E900D5068B"
+            BuildableName = "swetest"
+            BlueprintName = "swetest"
+            ReferencedContainer = "container:SwissEphemeris.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -72,15 +48,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16B89EA31A7BF08000D5068B"
-            BuildableName = "SwissEphemeris.framework"
-            BlueprintName = "SwissEphemeris"
-            ReferencedContainer = "container:SwissEphemeris-OSX.xcodeproj">
+            BlueprintIdentifier = "16B8A0351A7BF2E900D5068B"
+            BuildableName = "swetest"
+            BlueprintName = "swetest"
+            ReferencedContainer = "container:SwissEphemeris.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,15 +66,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16B89EA31A7BF08000D5068B"
-            BuildableName = "SwissEphemeris.framework"
-            BlueprintName = "SwissEphemeris"
-            ReferencedContainer = "container:SwissEphemeris-OSX.xcodeproj">
+            BlueprintIdentifier = "16B8A0351A7BF2E900D5068B"
+            BuildableName = "swetest"
+            BlueprintName = "swetest"
+            ReferencedContainer = "container:SwissEphemeris.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

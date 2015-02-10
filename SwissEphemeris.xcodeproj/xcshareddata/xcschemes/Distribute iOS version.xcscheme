@@ -30,10 +30,10 @@
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "161810321A878D4E00708976"
+                     BlueprintIdentifier = "16B065861A8A7A1200702A06"
                      BuildableName = "SwissEphemeris.framework"
-                     BlueprintName = "SwissEphemeris"
-                     ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
+                     BlueprintName = "SwissEphemeris-iOS"
+                     ReferencedContainer = "container:SwissEphemeris.xcodeproj">
                   </BuildableReference>
                </EnvironmentBuildable>
             </ActionContent>
@@ -48,10 +48,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "16C04C1F1A853F6400DCDC26"
+               BlueprintIdentifier = "16B0655B1A8A77DD00702A06"
                BuildableName = "Library"
                BlueprintName = "Library"
-               ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
+               ReferencedContainer = "container:SwissEphemeris.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -62,10 +62,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "161810321A878D4E00708976"
+               BlueprintIdentifier = "16B065861A8A7A1200702A06"
                BuildableName = "SwissEphemeris.framework"
-               BlueprintName = "SwissEphemeris"
-               ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
+               BlueprintName = "SwissEphemeris-iOS"
+               ReferencedContainer = "container:SwissEphemeris.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -80,10 +80,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16C04C1F1A853F6400DCDC26"
+            BlueprintIdentifier = "16B0655B1A8A77DD00702A06"
             BuildableName = "Library"
             BlueprintName = "Library"
-            ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
+            ReferencedContainer = "container:SwissEphemeris.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -99,10 +99,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16C04C1F1A853F6400DCDC26"
+            BlueprintIdentifier = "16B0655B1A8A77DD00702A06"
             BuildableName = "Library"
             BlueprintName = "Library"
-            ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
+            ReferencedContainer = "container:SwissEphemeris.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -117,10 +117,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "16C04C1F1A853F6400DCDC26"
+            BlueprintIdentifier = "16B0655B1A8A77DD00702A06"
             BuildableName = "Library"
             BlueprintName = "Library"
-            ReferencedContainer = "container:SwissEphemeris-iOS.xcodeproj">
+            ReferencedContainer = "container:SwissEphemeris.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
