@@ -1,0 +1,16 @@
+framework module SwissEphemeris {
+    umbrella header "swephexp.h"
+    
+    export *
+    module * { export * }
+    
+    explicit module defines {
+        header "sweodef.h"
+        export *
+    }
+    
+    explicit module pcalc {
+        header "swepcalc.h"
+        export *
+    }
+}

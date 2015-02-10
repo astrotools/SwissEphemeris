@@ -447,6 +447,7 @@
 		160935FA1A7C14C6002D2782 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
 		160935FD1A7C18FE002D2782 /* fixstars.cat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fixstars.cat; sourceTree = "<group>"; };
 		160935FF1A7C1B38002D2782 /* sedeltat.txt.inactive */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sedeltat.txt.inactive; sourceTree = "<group>"; };
+		16971EA31A8A9522001D0504 /* SwissEphemeris-OSX.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "SwissEphemeris-OSX.modulemap"; sourceTree = "<group>"; };
 		16B065321A8A76B800702A06 /* libSwissEphemeris.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwissEphemeris.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B065871A8A7A1200702A06 /* SwissEphemeris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwissEphemeris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B065A01A8A7CB300702A06 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -632,7 +633,7 @@
 		16B8A0361A7BF2E900D5068B /* swetest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swetest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B8A0431A7BF49000D5068B /* swepcalc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = swepcalc.c; sourceTree = "<group>"; };
 		16B8A0441A7BF49000D5068B /* swepcalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swepcalc.h; sourceTree = "<group>"; };
-		16F0A1F21A7E169200E88898 /* SwissEphemeris.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = SwissEphemeris.modulemap; path = SwissEphemeris/SwissEphemeris.modulemap; sourceTree = SOURCE_ROOT; };
+		16F0A1F21A7E169200E88898 /* SwissEphemeris-iOS.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = "SwissEphemeris-iOS.modulemap"; path = "SwissEphemeris/SwissEphemeris-iOS.modulemap"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -719,7 +720,8 @@
 			isa = PBXGroup;
 			children = (
 				16B89EA81A7BF08000D5068B /* Info.plist */,
-				16F0A1F21A7E169200E88898 /* SwissEphemeris.modulemap */,
+				16971EA31A8A9522001D0504 /* SwissEphemeris-OSX.modulemap */,
+				16F0A1F21A7E169200E88898 /* SwissEphemeris-iOS.modulemap */,
 				16B8A0141A7BF26900D5068B /* UnexportedSymbols.exp */,
 			);
 			name = "Supporting Files";
@@ -1665,7 +1667,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = SwissEphemeris/SwissEphemeris.modulemap;
+				MODULEMAP_FILE = "SwissEphemeris/SwissEphemeris-iOS.modulemap";
 				PRODUCT_NAME = SwissEphemeris;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1687,7 +1689,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = SwissEphemeris/SwissEphemeris.modulemap;
+				MODULEMAP_FILE = "SwissEphemeris/SwissEphemeris-iOS.modulemap";
 				PRODUCT_NAME = SwissEphemeris;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1781,7 +1783,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MODULEMAP_FILE = SwissEphemeris/SwissEphemeris.modulemap;
+				MODULEMAP_FILE = "SwissEphemeris/SwissEphemeris-OSX.modulemap";
 				PRODUCT_NAME = SwissEphemeris;
 				SKIP_INSTALL = YES;
 				UNEXPORTED_SYMBOLS_FILE = SwissEphemeris/UnexportedSymbols.exp;
@@ -1800,7 +1802,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MODULEMAP_FILE = SwissEphemeris/SwissEphemeris.modulemap;
+				MODULEMAP_FILE = "SwissEphemeris/SwissEphemeris-OSX.modulemap";
 				PRODUCT_NAME = SwissEphemeris;
 				SKIP_INSTALL = YES;
 				UNEXPORTED_SYMBOLS_FILE = SwissEphemeris/UnexportedSymbols.exp;
