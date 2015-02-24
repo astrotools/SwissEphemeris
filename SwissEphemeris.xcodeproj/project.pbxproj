@@ -7,20 +7,6 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		16B0655B1A8A77DD00702A06 /* Library */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = 16B0655C1A8A77DD00702A06 /* Build configuration list for PBXAggregateTarget "Library" */;
-			buildPhases = (
-				16B0655F1A8A77E100702A06 /* Build library for each architecture */,
-				16B065611A8A781300702A06 /* Build universal binary */,
-				16B065621A8A782C00702A06 /* Copy additional files to universal directory */,
-				16B065631A8A784100702A06 /* Remove product directories */,
-			);
-			dependencies = (
-			);
-			name = Library;
-			productName = Library;
-		};
 		16B8A02B1A7BF28F00D5068B /* Framework */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 16B8A02C1A7BF28F00D5068B /* Build configuration list for PBXAggregateTarget "Framework" */;
@@ -41,9 +27,14 @@
 		160935FC1A7C152F002D2782 /* seasnam.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F261A7BF1A000D5068B /* seasnam.txt */; };
 		160935FE1A7C18FE002D2782 /* fixstars.cat in Resources */ = {isa = PBXBuildFile; fileRef = 160935FD1A7C18FE002D2782 /* fixstars.cat */; };
 		160936001A7C1B38002D2782 /* sedeltat.txt.inactive in Resources */ = {isa = PBXBuildFile; fileRef = 160935FF1A7C1B38002D2782 /* sedeltat.txt.inactive */; };
-		16B0654B1A8A776F00702A06 /* sweodef.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16B8A00B1A7BF26900D5068B /* sweodef.h */; };
-		16B0654D1A8A776F00702A06 /* swephexp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16B8A00E1A7BF26900D5068B /* swephexp.h */; };
-		16B0654E1A8A776F00702A06 /* UnexportedSymbols.exp in CopyFiles */ = {isa = PBXBuildFile; fileRef = 16B8A0141A7BF26900D5068B /* UnexportedSymbols.exp */; };
+		162D79801A9C9859007F502F /* sweodef.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B8A00B1A7BF26900D5068B /* sweodef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		162D79811A9C9859007F502F /* swephexp.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B8A00E1A7BF26900D5068B /* swephexp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		162D79841A9C9AFB007F502F /* swedate.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B8A0011A7BF26900D5068B /* swedate.h */; };
+		162D79851A9C9AFB007F502F /* swehouse.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B8A0041A7BF26900D5068B /* swehouse.h */; };
+		162D79861A9C9AFB007F502F /* swejpl.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B8A0061A7BF26900D5068B /* swejpl.h */; };
+		162D79871A9C9AFB007F502F /* swenut2000a.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B8A00A1A7BF26900D5068B /* swenut2000a.h */; };
+		162D79881A9C9AFB007F502F /* sweph.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B8A00D1A7BF26900D5068B /* sweph.h */; };
+		162D79891A9C9AFB007F502F /* swephlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B8A0101A7BF26900D5068B /* swephlib.h */; };
 		16B0654F1A8A778A00702A06 /* SwissEphGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0131A7BF26900D5068B /* SwissEphGlue.m */; };
 		16B065501A8A779200702A06 /* swecl.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B89FFF1A7BF26900D5068B /* swecl.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		16B065511A8A779200702A06 /* swedate.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0001A7BF26900D5068B /* swedate.c */; settings = {COMPILER_FLAGS = "-w"; }; };
@@ -52,7 +43,6 @@
 		16B065541A8A779200702A06 /* swejpl.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0051A7BF26900D5068B /* swejpl.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		16B065551A8A779200702A06 /* swemmoon.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0071A7BF26900D5068B /* swemmoon.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		16B065561A8A779200702A06 /* swemplan.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0081A7BF26900D5068B /* swemplan.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		16B065571A8A779200702A06 /* swepcalc.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0431A7BF49000D5068B /* swepcalc.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		16B065581A8A779200702A06 /* sweph.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A00C1A7BF26900D5068B /* sweph.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		16B065591A8A779200702A06 /* swephlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A00F1A7BF26900D5068B /* swephlib.c */; settings = {COMPILER_FLAGS = "-w"; }; };
 		16B065A11A8A7D2000702A06 /* LICENSE.TXT in Resources */ = {isa = PBXBuildFile; fileRef = 160935FA1A7C14C6002D2782 /* LICENSE.TXT */; };
@@ -400,8 +390,6 @@
 		16B8A0291A7BF26900D5068B /* SwissEphGlue.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0131A7BF26900D5068B /* SwissEphGlue.m */; };
 		16B8A0411A7BF30600D5068B /* SwissEphemeris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B89EA41A7BF08000D5068B /* SwissEphemeris.framework */; };
 		16B8A0421A7BF31400D5068B /* swetest.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0111A7BF26900D5068B /* swetest.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		16B8A0451A7BF49000D5068B /* swepcalc.c in Sources */ = {isa = PBXBuildFile; fileRef = 16B8A0431A7BF49000D5068B /* swepcalc.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		16B8A0461A7BF49000D5068B /* swepcalc.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B8A0441A7BF49000D5068B /* swepcalc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -428,26 +416,10 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		16B065491A8A773800702A06 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 16;
-			files = (
-				16B0654B1A8A776F00702A06 /* sweodef.h in CopyFiles */,
-				16B0654D1A8A776F00702A06 /* swephexp.h in CopyFiles */,
-				16B0654E1A8A776F00702A06 /* UnexportedSymbols.exp in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		160935FA1A7C14C6002D2782 /* LICENSE.TXT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.TXT; sourceTree = "<group>"; };
 		160935FD1A7C18FE002D2782 /* fixstars.cat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fixstars.cat; sourceTree = "<group>"; };
 		160935FF1A7C1B38002D2782 /* sedeltat.txt.inactive */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sedeltat.txt.inactive; sourceTree = "<group>"; };
-		16971EA31A8A9522001D0504 /* SwissEphemeris-OSX.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = "SwissEphemeris-OSX.modulemap"; sourceTree = "<group>"; };
 		16B065321A8A76B800702A06 /* libSwissEphemeris.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwissEphemeris.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B065871A8A7A1200702A06 /* SwissEphemeris.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwissEphemeris.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B065A01A8A7CB300702A06 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -633,7 +605,7 @@
 		16B8A0361A7BF2E900D5068B /* swetest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swetest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B8A0431A7BF49000D5068B /* swepcalc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = swepcalc.c; sourceTree = "<group>"; };
 		16B8A0441A7BF49000D5068B /* swepcalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swepcalc.h; sourceTree = "<group>"; };
-		16F0A1F21A7E169200E88898 /* SwissEphemeris-iOS.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = "SwissEphemeris-iOS.modulemap"; path = "SwissEphemeris/SwissEphemeris-iOS.modulemap"; sourceTree = SOURCE_ROOT; };
+		16F0A1F21A7E169200E88898 /* SwissEphemeris.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = SwissEphemeris.modulemap; path = SwissEphemeris/SwissEphemeris.modulemap; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -720,8 +692,7 @@
 			isa = PBXGroup;
 			children = (
 				16B89EA81A7BF08000D5068B /* Info.plist */,
-				16971EA31A8A9522001D0504 /* SwissEphemeris-OSX.modulemap */,
-				16F0A1F21A7E169200E88898 /* SwissEphemeris-iOS.modulemap */,
+				16F0A1F21A7E169200E88898 /* SwissEphemeris.modulemap */,
 				16B8A0141A7BF26900D5068B /* UnexportedSymbols.exp */,
 			);
 			name = "Supporting Files";
@@ -960,12 +931,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		162D797F1A9C982F007F502F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				162D79811A9C9859007F502F /* swephexp.h in Headers */,
+				162D79801A9C9859007F502F /* sweodef.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		16B065841A8A7A1200702A06 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				16B066411A8A7D2B00702A06 /* swephexp.h in Headers */,
 				16B0663F1A8A7D2B00702A06 /* sweodef.h in Headers */,
+				162D79841A9C9AFB007F502F /* swedate.h in Headers */,
+				162D79851A9C9AFB007F502F /* swehouse.h in Headers */,
+				162D79861A9C9AFB007F502F /* swejpl.h in Headers */,
+				162D79871A9C9AFB007F502F /* swenut2000a.h in Headers */,
+				162D79881A9C9AFB007F502F /* sweph.h in Headers */,
+				162D79891A9C9AFB007F502F /* swephlib.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -974,7 +960,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				16B8A0241A7BF26900D5068B /* swephexp.h in Headers */,
-				16B8A0461A7BF49000D5068B /* swepcalc.h in Headers */,
 				16B8A0211A7BF26900D5068B /* sweodef.h in Headers */,
 				16B8A0231A7BF26900D5068B /* sweph.h in Headers */,
 				16B8A0201A7BF26900D5068B /* swenut2000a.h in Headers */,
@@ -994,7 +979,8 @@
 			buildConfigurationList = 16B065431A8A76B800702A06 /* Build configuration list for PBXNativeTarget "libSwissEphemeris" */;
 			buildPhases = (
 				16B0652E1A8A76B800702A06 /* Sources */,
-				16B065491A8A773800702A06 /* CopyFiles */,
+				162D797F1A9C982F007F502F /* Headers */,
+				162D797E1A9C9671007F502F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1070,9 +1056,6 @@
 					16B065311A8A76B800702A06 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					16B0655B1A8A77DD00702A06 = {
-						CreatedOnToolsVersion = 6.1.1;
-					};
 					16B065861A8A7A1200702A06 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -1103,7 +1086,6 @@
 				16B8A0351A7BF2E900D5068B /* swetest */,
 				16B8A02B1A7BF28F00D5068B /* Framework */,
 				16B065311A8A76B800702A06 /* libSwissEphemeris */,
-				16B0655B1A8A77DD00702A06 /* Library */,
 				16B065861A8A7A1200702A06 /* SwissEphemeris-iOS */,
 			);
 		};
@@ -1443,61 +1425,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		16B0655F1A8A77E100702A06 /* Build library for each architecture */ = {
+		162D797E1A9C9671007F502F /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Build library for each architecture";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "xcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -scheme libSwissEphemeris -configuration ${CONFIGURATION} $ACTION TARGET_BUILD_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\" BUILT_PRODUCTS_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\"\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -scheme libSwissEphemeris -configuration ${CONFIGURATION} $ACTION TARGET_BUILD_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\" BUILT_PRODUCTS_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n";
-		};
-		16B065611A8A781300702A06 /* Build universal binary */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Build universal binary";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "LIBRARY_NAME=\"libSwissEphemeris.a\"\n\nSIMULATOR_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\"\nDEVICE_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\nSIMULATOR_LIBRARY_PATH=\"${SIMULATOR_LIBRARY_DIR}/${LIBRARY_NAME}\"\nDEVICE_LIBRARY_PATH=\"${DEVICE_LIBRARY_DIR}/${LIBRARY_NAME}\"\nUNIVERSAL_LIBRARY_PATH=\"${UNIVERSAL_LIBRARY_DIR}/${LIBRARY_NAME}\"\n\nmkdir -p \"${UNIVERSAL_LIBRARY_DIR}\"\nlipo \"${SIMULATOR_LIBRARY_PATH}\" \"${DEVICE_LIBRARY_PATH}\" -create -output \"${UNIVERSAL_LIBRARY_PATH}\"\n";
-		};
-		16B065621A8A782C00702A06 /* Copy additional files to universal directory */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy additional files to universal directory";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "DEVICE_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal\"\n\ncp \"${DEVICE_LIBRARY_DIR}/swephexp.h\" \"${UNIVERSAL_LIBRARY_DIR}\"\ncp \"${DEVICE_LIBRARY_DIR}/sweodef.h\" \"${UNIVERSAL_LIBRARY_DIR}\"\ncp \"${DEVICE_LIBRARY_DIR}/UnexportedSymbols.exp\" \"${UNIVERSAL_LIBRARY_DIR}\"\n";
-		};
-		16B065631A8A784100702A06 /* Remove product directories */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Remove product directories";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "SIMULATOR_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\"\nDEVICE_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos\"\n\nrm \"${SIMULATOR_LIBRARY_DIR}/libSwissEphemeris.a\" \"${SIMULATOR_LIBRARY_DIR}/sweodef.h\" \"${SIMULATOR_LIBRARY_DIR}/swephexp.h\" \"${SIMULATOR_LIBRARY_DIR}/UnexportedSymbols.exp\"\nrm \"${DEVICE_LIBRARY_DIR}/libSwissEphemeris.a\" \"${DEVICE_LIBRARY_DIR}/sweodef.h\" \"${DEVICE_LIBRARY_DIR}/swephexp.h\" \"${DEVICE_LIBRARY_DIR}/UnexportedSymbols.exp\"\n";
+			shellScript = "##########################################\n#\n# c.f. http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n#\n# Version 2.7\n#\n# Latest Change:\n# - Supports iPhone 5 / iPod Touch 5 (uses Apple's workaround to lipo bug)\n#\n# Purpose:\n#   Automatically create a Universal static library for iPhone + iPad + iPhone Simulator from within XCode\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Based on: original script from Eonil (main changes: Eonil's script WILL NOT WORK in Xcode GUI - it WILL CRASH YOUR COMPUTER)\n#\n\nset -e\nset -o pipefail\n\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"false\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\n#####################[ part 1 ]##################\n# First, work out the BASESDK version number (NB: Apple ought to report this, but they hide it)\n#    (incidental: searching for substrings in sh is a nightmare! Sob)\n\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n\n# Next, work out if we're in SIM or DEVICE\n\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n#\n#####################[ end of part 1 ]##################\n\n#####################[ part 2 ]##################\n#\n# IF this is the original invocation, invoke WHATEVER other builds are required\n#\n# Xcode is already building ONE target...\n#\n# ...but this is a LIBRARY, so Apple is wrong to set it to build just one.\n# ...we need to build ALL targets\n# ...we MUST NOT re-build the target that is ALREADY being built: Xcode WILL CRASH YOUR COMPUTER if you try this (infinite recursion!)\n#\n#\n# So: build ONLY the missing platforms/configurations.\n\nif [ \"true\" == ${ALREADYINVOKED:-false} ]\nthen\necho \"RECURSION: I am NOT the root invocation, so I'm NOT going to recurse\"\nelse\n# CRITICAL:\n# Prevent infinite recursion (Xcode sucks)\nexport ALREADYINVOKED=\"true\"\n\necho \"RECURSION: I am the root ... recursing all missing build targets NOW...\"\necho \"RECURSION: ...about to invoke: xcodebuild -configuration \\\"${CONFIGURATION}\\\" -project \\\"${PROJECT_NAME}.xcodeproj\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO\" BUILD_DIR=\\\"${BUILD_DIR}\\\" BUILD_ROOT=\\\"${BUILD_ROOT}\\\" SYMROOT=\\\"${SYMROOT}\\\"\n\nxcodebuild -configuration \"${CONFIGURATION}\" -project \"${PROJECT_NAME}.xcodeproj\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\"\n\nACTION=\"build\"\n\n#Merge all platform binaries as a fat binary for each configurations.\n\n# Calculate where the (multiple) built files are coming from:\nCURRENTCONFIG_DEVICE_DIR=${SYMROOT}/${CONFIGURATION}-iphoneos\nCURRENTCONFIG_SIMULATOR_DIR=${SYMROOT}/${CONFIGURATION}-iphonesimulator\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\n\nCREATING_UNIVERSAL_DIR=${SYMROOT}/${CONFIGURATION}-iphoneuniversal\necho \"...I will output a universal build to: ${CREATING_UNIVERSAL_DIR}\"\n\n# ... remove the products of previous runs of this script\n#      NB: this directory is ONLY created by this script - it should be safe to delete!\n\nrm -rf \"${CREATING_UNIVERSAL_DIR}\"\nmkdir \"${CREATING_UNIVERSAL_DIR}\"\n\n#\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nxcrun -sdk iphoneos lipo -create -output \"${CREATING_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\n#########\n#\n# Added: StackOverflow suggestion to also copy \"include\" files\n#    (untested, but should work OK)\n#\necho \"Fetching headers from ${PUBLIC_HEADERS_FOLDER_PATH}\"\necho \"  (if you embed your library project in another project, you will need to add\"\necho \"   a \"User Search Headers\" build setting of: (NB INCLUDE THE DOUBLE QUOTES BELOW!)\"\necho '        \"$(TARGET_BUILD_DIR)/usr/local/include/\"'\nif [ -d \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\" ]\nthen\nmkdir -p \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\n# * needs to be outside the double quotes?\ncp -r \"${CURRENTCONFIG_DEVICE_DIR}${PUBLIC_HEADERS_FOLDER_PATH}/\"* \"${CREATING_UNIVERSAL_DIR}${PUBLIC_HEADERS_FOLDER_PATH}\"\nfi\nfi";
 		};
 		16B8A0311A7BF29C00D5068B /* Copy swetest into Framework */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1527,7 +1466,6 @@
 				16B065541A8A779200702A06 /* swejpl.c in Sources */,
 				16B065551A8A779200702A06 /* swemmoon.c in Sources */,
 				16B065561A8A779200702A06 /* swemplan.c in Sources */,
-				16B065571A8A779200702A06 /* swepcalc.c in Sources */,
 				16B065581A8A779200702A06 /* sweph.c in Sources */,
 				16B065591A8A779200702A06 /* swephlib.c in Sources */,
 				16B0654F1A8A778A00702A06 /* SwissEphGlue.m in Sources */,
@@ -1561,7 +1499,6 @@
 				16B8A0221A7BF26900D5068B /* sweph.c in Sources */,
 				16B8A0191A7BF26900D5068B /* swehouse.c in Sources */,
 				16B8A0251A7BF26900D5068B /* swephlib.c in Sources */,
-				16B8A0451A7BF49000D5068B /* swepcalc.c in Sources */,
 				16B8A01D1A7BF26900D5068B /* swemmoon.c in Sources */,
 				16B8A0291A7BF26900D5068B /* SwissEphGlue.m in Sources */,
 				16B8A0161A7BF26900D5068B /* swedate.c in Sources */,
@@ -1609,6 +1546,7 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				MODULEMAP_FILE = SwissEphemeris/SwissEphemeris.modulemap;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = SwissEphemeris;
 				SDKROOT = iphoneos;
@@ -1622,26 +1560,13 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "STATIC_LIBRARY=1 ";
+				MODULEMAP_FILE = SwissEphemeris/SwissEphemeris.modulemap;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = SwissEphemeris;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				UNEXPORTED_SYMBOLS_FILE = SwissEphemeris/UnexportedSymbols.exp;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		16B0655D1A8A77DD00702A06 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		16B0655E1A8A77DD00702A06 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -1665,7 +1590,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "SwissEphemeris/SwissEphemeris-iOS.modulemap";
+				MODULEMAP_FILE = SwissEphemeris/SwissEphemeris.modulemap;
 				PRODUCT_NAME = SwissEphemeris;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1686,7 +1611,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "SwissEphemeris/SwissEphemeris-iOS.modulemap";
+				MODULEMAP_FILE = SwissEphemeris/SwissEphemeris.modulemap;
 				PRODUCT_NAME = SwissEphemeris;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -1782,7 +1707,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MODULEMAP_FILE = "SwissEphemeris/SwissEphemeris-OSX.modulemap";
+				MODULEMAP_FILE = SwissEphemeris/SwissEphemeris.modulemap;
 				PRODUCT_NAME = SwissEphemeris;
 				SKIP_INSTALL = YES;
 				UNEXPORTED_SYMBOLS_FILE = SwissEphemeris/UnexportedSymbols.exp;
@@ -1800,7 +1725,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
-				MODULEMAP_FILE = "SwissEphemeris/SwissEphemeris-OSX.modulemap";
+				MODULEMAP_FILE = SwissEphemeris/SwissEphemeris.modulemap;
 				PRODUCT_NAME = SwissEphemeris;
 				SKIP_INSTALL = YES;
 				UNEXPORTED_SYMBOLS_FILE = SwissEphemeris/UnexportedSymbols.exp;
@@ -1849,15 +1774,6 @@
 			buildConfigurations = (
 				16B065441A8A76B800702A06 /* Debug */,
 				16B065451A8A76B800702A06 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		16B0655C1A8A77DD00702A06 /* Build configuration list for PBXAggregateTarget "Library" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				16B0655D1A8A77DD00702A06 /* Debug */,
-				16B0655E1A8A77DD00702A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
