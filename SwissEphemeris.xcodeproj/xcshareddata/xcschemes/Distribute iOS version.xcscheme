@@ -10,7 +10,7 @@
             ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
             <ActionContent
                title = "Run Script"
-               scriptText = "cd &quot;${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal&quot;&#10;&#10;rm libSwissEphemeris.zip&#10;zip libSwissEphemeris.zip -q *&#10;">
+               scriptText = "cd &quot;${BUILD_DIR}/${CONFIGURATION}-iphoneuniversal&quot;&#10;&#10;rm libSwissEphemeris.zip&#10;zip libSwissEphemeris.zip -r -q *&#10;">
                <EnvironmentBuildable>
                   <BuildableReference
                      BuildableIdentifier = "primary"
