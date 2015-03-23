@@ -197,7 +197,6 @@
 		16B066361A8A7D2000702A06 /* seasm120.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F561A7BF1A000D5068B /* seasm120.se1 */; };
 		16B066371A8A7D2000702A06 /* seasm126.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F571A7BF1A000D5068B /* seasm126.se1 */; };
 		16B066381A8A7D2100702A06 /* seasm132.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F581A7BF1A000D5068B /* seasm132.se1 */; };
-		16B066391A8A7D2100702A06 /* se07066.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F5A1A7BF1A000D5068B /* se07066.se1 */; };
 		16B0663A1A8A7D2100702A06 /* seorbel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F5D1A7BF1A000D5068B /* seorbel.txt */; };
 		16B0663B1A8A7D2100702A06 /* fixstars.cat in Resources */ = {isa = PBXBuildFile; fileRef = 160935FD1A7C18FE002D2782 /* fixstars.cat */; };
 		16B0663C1A8A7D2100702A06 /* sefstars.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F5F1A7BF1A000D5068B /* sefstars.txt */; };
@@ -365,7 +364,6 @@
 		16B89FF81A7BF1A000D5068B /* seasm120.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F561A7BF1A000D5068B /* seasm120.se1 */; };
 		16B89FF91A7BF1A000D5068B /* seasm126.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F571A7BF1A000D5068B /* seasm126.se1 */; };
 		16B89FFA1A7BF1A000D5068B /* seasm132.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F581A7BF1A000D5068B /* seasm132.se1 */; };
-		16B89FFB1A7BF1A000D5068B /* se07066.se1 in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F5A1A7BF1A000D5068B /* se07066.se1 */; };
 		16B89FFC1A7BF1A000D5068B /* seorbel.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F5D1A7BF1A000D5068B /* seorbel.txt */; };
 		16B89FFD1A7BF1A000D5068B /* sefstars.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F5F1A7BF1A000D5068B /* sefstars.txt */; };
 		16B89FFE1A7BF1A000D5068B /* seleapsec.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B89F611A7BF1A000D5068B /* seleapsec.txt */; };
@@ -576,7 +574,6 @@
 		16B89F561A7BF1A000D5068B /* seasm120.se1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = seasm120.se1; sourceTree = "<group>"; };
 		16B89F571A7BF1A000D5068B /* seasm126.se1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = seasm126.se1; sourceTree = "<group>"; };
 		16B89F581A7BF1A000D5068B /* seasm132.se1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = seasm132.se1; sourceTree = "<group>"; };
-		16B89F5A1A7BF1A000D5068B /* se07066.se1 */ = {isa = PBXFileReference; lastKnownFileType = file; path = se07066.se1; sourceTree = "<group>"; };
 		16B89F5D1A7BF1A000D5068B /* seorbel.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = seorbel.txt; sourceTree = "<group>"; };
 		16B89F5F1A7BF1A000D5068B /* sefstars.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sefstars.txt; sourceTree = "<group>"; };
 		16B89F611A7BF1A000D5068B /* seleapsec.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = seleapsec.txt; sourceTree = "<group>"; };
@@ -603,8 +600,6 @@
 		16B8A0131A7BF26900D5068B /* SwissEphGlue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwissEphGlue.m; path = SwissEphemeris/SwissEphGlue.m; sourceTree = "<group>"; };
 		16B8A0141A7BF26900D5068B /* UnexportedSymbols.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; path = UnexportedSymbols.exp; sourceTree = "<group>"; };
 		16B8A0361A7BF2E900D5068B /* swetest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swetest; sourceTree = BUILT_PRODUCTS_DIR; };
-		16B8A0431A7BF49000D5068B /* swepcalc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = swepcalc.c; sourceTree = "<group>"; };
-		16B8A0441A7BF49000D5068B /* swepcalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swepcalc.h; sourceTree = "<group>"; };
 		16F0A1F21A7E169200E88898 /* SwissEphemeris.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; name = SwissEphemeris.modulemap; path = SwissEphemeris/SwissEphemeris.modulemap; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -675,8 +670,6 @@
 				16B8A0091A7BF26900D5068B /* swemptab.c */,
 				16B8A00A1A7BF26900D5068B /* swenut2000a.h */,
 				16B8A00B1A7BF26900D5068B /* sweodef.h */,
-				16B8A0431A7BF49000D5068B /* swepcalc.c */,
-				16B8A0441A7BF49000D5068B /* swepcalc.h */,
 				16B8A00C1A7BF26900D5068B /* sweph.c */,
 				16B8A00D1A7BF26900D5068B /* sweph.h */,
 				16B8A00E1A7BF26900D5068B /* swephexp.h */,
@@ -873,7 +866,6 @@
 		16B89F5B1A7BF1A000D5068B /* Additional */ = {
 			isa = PBXGroup;
 			children = (
-				16B89F5A1A7BF1A000D5068B /* se07066.se1 */,
 			);
 			name = Additional;
 			sourceTree = "<group>";
@@ -1248,7 +1240,6 @@
 				16B066361A8A7D2000702A06 /* seasm120.se1 in Resources */,
 				16B066371A8A7D2000702A06 /* seasm126.se1 in Resources */,
 				16B066381A8A7D2100702A06 /* seasm132.se1 in Resources */,
-				16B066391A8A7D2100702A06 /* se07066.se1 in Resources */,
 				16B0663A1A8A7D2100702A06 /* seorbel.txt in Resources */,
 				16B0663B1A8A7D2100702A06 /* fixstars.cat in Resources */,
 				16B0663C1A8A7D2100702A06 /* sefstars.txt in Resources */,
@@ -1358,7 +1349,6 @@
 				16B89FB91A7BF1A000D5068B /* semom48.se1 in Resources */,
 				16B89F981A7BF1A000D5068B /* semo_12.se1 in Resources */,
 				16B89F7A1A7BF1A000D5068B /* sepl_132.se1 in Resources */,
-				16B89FFB1A7BF1A000D5068B /* se07066.se1 in Resources */,
 				16B89FE41A7BF1A000D5068B /* seas_162.se1 in Resources */,
 				16B89FEC1A7BF1A000D5068B /* seasm48.se1 in Resources */,
 				16B89F851A7BF1A000D5068B /* seplm36.se1 in Resources */,
