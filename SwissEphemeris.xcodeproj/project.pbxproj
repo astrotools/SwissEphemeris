@@ -587,7 +587,7 @@
 		16B8A0061A7BF26900D5068B /* swejpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swejpl.h; sourceTree = "<group>"; };
 		16B8A0071A7BF26900D5068B /* swemmoon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = swemmoon.c; sourceTree = "<group>"; };
 		16B8A0081A7BF26900D5068B /* swemplan.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = swemplan.c; sourceTree = "<group>"; };
-		16B8A0091A7BF26900D5068B /* swemptab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = swemptab.c; sourceTree = "<group>"; };
+		16B8A0091A7BF26900D5068B /* swemptab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swemptab.h; sourceTree = "<group>"; };
 		16B8A00A1A7BF26900D5068B /* swenut2000a.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = swenut2000a.h; sourceTree = "<group>"; };
 		16B8A00B1A7BF26900D5068B /* sweodef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sweodef.h; sourceTree = "<group>"; };
 		16B8A00C1A7BF26900D5068B /* sweph.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sweph.c; sourceTree = "<group>"; };
@@ -667,7 +667,7 @@
 				16B8A0061A7BF26900D5068B /* swejpl.h */,
 				16B8A0071A7BF26900D5068B /* swemmoon.c */,
 				16B8A0081A7BF26900D5068B /* swemplan.c */,
-				16B8A0091A7BF26900D5068B /* swemptab.c */,
+				16B8A0091A7BF26900D5068B /* swemptab.h */,
 				16B8A00A1A7BF26900D5068B /* swenut2000a.h */,
 				16B8A00B1A7BF26900D5068B /* sweodef.h */,
 				16B8A00C1A7BF26900D5068B /* sweph.c */,
@@ -1690,9 +1690,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 202.01;
 				DEFINES_MODULE = YES;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
+				FRAMEWORK_VERSION = B;
 				INFOPLIST_FILE = SwissEphemeris/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
@@ -1708,9 +1709,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 202.01;
 				DEFINES_MODULE = YES;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
+				FRAMEWORK_VERSION = B;
 				INFOPLIST_FILE = SwissEphemeris/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";

@@ -34,7 +34,10 @@ _swi_gen_filename
 _swi_get_fict_name
 _swi_get_jpl_denum
 _swi_get_observer
+_swi_get_tid_acc
+_swi_guess_ephe_flag
 _swi_icrs2fk5
+_swi_init_swed_if_start
 _swi_intp_apsides
 _swi_kepler
 _swi_ldp_peps
@@ -57,6 +60,7 @@ _swi_polcart_sp
 _swi_precess
 _swi_precess_speed
 _swi_right_trim
+_swi_set_tid_acc
 _swi_strcpy
 _swi_strncpy
 _swi_trop_ra2sid_lon
