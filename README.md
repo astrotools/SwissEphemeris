@@ -2,7 +2,7 @@
 This repo contains a configured Xcode workspace with a Xcode project for use in Mac apps and a Xcode project for use in iOS apps.
 
 # Features
-* Preconfigured Xcode project with Swiss Ephemeris 2.02.01 source code ready to be build.
+* Preconfigured Xcode project with Swiss Ephemeris 2.03 source code ready to be build.
 * Build easily libraries for OS X and iOS. Note: **The source code is not checked or audited for correct operation and results on 64-bit architectures.**
   * OS X: <code>SwissEphemeris.framework</code> supports OS X 10.6 or later on <code>x86_64</code>
   * iOS: <code>libSwissEphemeris.a</code> supports iOS 6.0 or later on the simulator and <code>armv7</code> and <code>arm64</code> on the device
