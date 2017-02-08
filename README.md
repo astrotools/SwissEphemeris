@@ -1,3 +1,5 @@
+_note: project is unmaintained!_
+
 # Swiss Ephemeris for OS X and iOS
 This repo contains a configured Xcode workspace with a Xcode project for use in Mac apps and a Xcode project for use in iOS apps.
 
